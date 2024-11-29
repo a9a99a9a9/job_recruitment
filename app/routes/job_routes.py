@@ -7,6 +7,27 @@ job_routes = Blueprint('jobs', __name__)
 @job_routes.route('/', methods=['GET'])  # /jobs 경로로 연결됨
 def get_jobs():
     filters = request.args.to_dict()
+
+    # location 필터링을 위한 부분 추가 (대소문자 구분 없이 검색)
+    if 'location' in filters:
+        filters['location'] = {'$regex': filters['location'], '$options': 'i'}  # 대소문자 구분 없이 검색
+
+    # 경력 필터링을 위한 부분 추가 (대소문자 구분 없이 검색)
+    if '경력' in filters:
+        filters['경력'] = {'$regex': filters['경력'], '$options': 'i'}  # 대소문자 구분 없이 검색
+
+    # 회사명 필터링을 위한 부분 추가 (대소문자 구분 없이 검색)
+    if 'company' in filters:
+        filters['company'] = {'$regex': filters['company'], '$options': 'i'}  # 대소문자 구분 없이 검색
+
+    # 제목 필터링을 위한 부분 추가 (대소문자 구분 없이 검색)
+    if 'title' in filters:
+        filters['title'] = {'$regex': filters['title'], '$options': 'i'}  # 대소문자 구분 없이 검색
+
+    # 'deadline' 필터링을 위한 부분 추가 (마감일 필터)
+    if 'deadline' in filters:
+        filters['deadline'] = {'$regex': filters['deadline'], '$options': 'i'}  # 대소문자 구분 없이 검색
+
     jobs = Job.find_all(filters)
     return jsonify({"data": jobs}), 200
 

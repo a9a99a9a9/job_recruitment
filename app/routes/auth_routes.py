@@ -13,12 +13,15 @@ def register_user():
     if not data.get('email') or not data.get('password'):
         return jsonify({"error": "이메일과 비밀번호는 필수입니다."}), 400
 
-    # 비밀번호 해싱 및 사용자 저장
+    # username이 존재하는 경우만 저장
+    username = data.get('username', None)  # username은 선택적 필드로 처리
     hashed_password = generate_password_hash(data['password'])
-    new_user = User(email=data['email'], password=hashed_password)
+
+    new_user = User(email=data['email'], password=hashed_password, username=username)
     user_id = new_user.save()
 
     return jsonify({"message": "회원 가입 성공", "user_id": str(user_id)}), 201
+
 
 # 로그인
 @auth_routes.route('/login', methods=['POST'])
