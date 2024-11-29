@@ -1,97 +1,39 @@
-from flask import Blueprint, jsonify, request
-from pymongo import MongoClient
-from bson.objectid import ObjectId
+from flask import Blueprint, request, jsonify
+from app.models.job import Job
 
-# MongoDB 연결
-client = MongoClient("mongodb://localhost:27017/")
-db = client['job_crawler']
-collection = db['saramin_jobs']
+job_routes = Blueprint('jobs', __name__)
 
-# 블루프린트 생성
-job_routes = Blueprint('job_routes', __name__)
-
-# GET /jobs - 모든 채용 공고 조회 (페이지네이션, 필터링, 정렬)
+# 채용 공고 조회 (전체)
 @job_routes.route('/jobs', methods=['GET'])
 def get_jobs():
-    # 쿼리 매개변수 처리
-    page = int(request.args.get('page', 1))  # 기본값: 1페이지
-    limit = int(request.args.get('limit', 20))  # 기본값: 페이지당 20개
-    skip = (page - 1) * limit  # 스킵할 문서 수 계산
-    sort_by = request.args.get('sort_by', '마감일')  # 기본 정렬 필드: 마감일
-    sort_order = request.args.get('sort_order', 'asc')  # 기본 정렬 순서: 오름차순
-    filters = {}
+    filters = request.args
+    jobs = Job.find_all(filters)
+    return jsonify({"data": jobs}), 200
 
-    # 필터링 조건 처리
-    company = request.args.get('company')  # 회사명
-    location = request.args.get('location')  # 지역
-    experience = request.args.get('experience')  # 경력
-    job_title = request.args.get('title')  # 채용 제목
+# 채용 공고 등록
+@job_routes.route('/jobs', methods=['POST'])
+def add_job():
+    data = request.json
+    new_job = Job(data)
+    job_id = new_job.save()
+    return jsonify({"message": "채용 공고 등록 성공", "job_id": str(job_id)}), 201
 
-    if company:
-        filters['회사명'] = {'$regex': company, '$options': 'i'}  # 대소문자 구분 없이 검색
-    if location:
-        filters['지역'] = {'$regex': location, '$options': 'i'}
-    if experience:
-        filters['경력'] = {'$regex': experience, '$options': 'i'}
-    if job_title:
-        filters['제목'] = {'$regex': job_title, '$options': 'i'}
+# 채용 공고 수정
+@job_routes.route('/jobs/<job_id>', methods=['PUT'])
+def update_job(job_id):
+    data = request.json
+    updated = Job.update(job_id, data)
+    return jsonify({"message": "채용 공고 수정 성공", "updated": updated}), 200
 
-    # 정렬 설정
-    sort_order = 1 if sort_order == 'asc' else -1  # asc는 1, desc는 -1
-    jobs = list(
-        collection.find(filters)
-        .sort(sort_by, sort_order)
-        .skip(skip)
-        .limit(limit)
-    )
+# 채용 공고 삭제
+@job_routes.route('/jobs/<job_id>', methods=['DELETE'])
+def delete_job(job_id):
+    Job.delete(job_id)
+    return jsonify({"message": "채용 공고 삭제 성공"}), 200
 
-    # ObjectId 문자열 변환
-    for job in jobs:
-        job['_id'] = str(job['_id'])
-
-    # 총 문서 수 계산
-    total_items = collection.count_documents(filters)
-
-    # 응답 반환
-    return jsonify({
-        'status': 'success',
-        'data': jobs,
-        'pagination': {
-            'currentPage': page,
-            'limit': limit,
-            'totalItems': total_items,
-            'totalPages': (total_items // limit) + (1 if total_items % limit > 0 else 0),
-        }
-    })
-
-# GET /jobs/all - 모든 채용 공고 조회 (필터링만, 페이지네이션 없음)
-@job_routes.route('/jobs/all', methods=['GET'])
-def get_all_jobs():
-    filters = {}
-
-    # 필터링 조건 처리
-    company = request.args.get('company')  # 회사명
-    location = request.args.get('location')  # 지역
-    experience = request.args.get('experience')  # 경력
-    job_title = request.args.get('title')  # 채용 제목
-
-    if company:
-        filters['회사명'] = {'$regex': company, '$options': 'i'}  # 대소문자 구분 없이 검색
-    if location:
-        filters['지역'] = {'$regex': location, '$options': 'i'}
-    if experience:
-        filters['경력'] = {'$regex': experience, '$options': 'i'}
-    if job_title:
-        filters['제목'] = {'$regex': job_title, '$options': 'i'}
-
-    # 모든 데이터 조회
-    jobs = list(collection.find(filters))
-    for job in jobs:
-        job['_id'] = str(job['_id'])
-
-    # 응답 반환
-    return jsonify({
-        'status': 'success',
-        'data': jobs,
-        'totalItems': len(jobs)
-    })
+# 채용 공고 검색
+@job_routes.route('/jobs/search', methods=['GET'])
+def search_jobs():
+    query = request.args.get('query', '')
+    jobs = Job.search(query)
+    return jsonify({"data": jobs}), 200

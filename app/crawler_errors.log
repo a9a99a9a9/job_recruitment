@@ -70,3 +70,145 @@
 2024-11-27 17:53:04,640 - 127.0.0.1 - - [27/Nov/2024 17:53:04] "GET /jobs?company=Samsung&location=Seoul&sort_by=마감일&sort_order=desc HTTP/1.1" 200 -
 2024-11-27 17:53:17,440 - 127.0.0.1 - - [27/Nov/2024 17:53:17] "GET /jobs/all?company=LG&experience=5년%20이상 HTTP/1.1" 200 -
 2024-11-27 17:54:54,711 - 127.0.0.1 - - [27/Nov/2024 17:54:54] "GET /jobs/all HTTP/1.1" 200 -
+2024-11-27 18:15:36,550 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-27 18:15:36,550 - [33mPress CTRL+C to quit[0m
+2024-11-27 18:15:36,551 -  * Restarting with stat
+2024-11-27 18:15:36,838 -  * Debugger is active!
+2024-11-27 18:15:36,844 -  * Debugger PIN: 527-388-488
+2024-11-27 18:25:11,694 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/__init__.py', reloading
+2024-11-27 18:25:11,977 -  * Restarting with stat
+2024-11-27 18:34:19,601 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.55.90.119:5000
+2024-11-27 18:34:19,602 - [33mPress CTRL+C to quit[0m
+2024-11-27 18:34:19,602 -  * Restarting with stat
+2024-11-27 18:34:19,886 -  * Debugger is active!
+2024-11-27 18:34:19,892 -  * Debugger PIN: 527-388-488
+2024-11-27 18:35:26,328 - 127.0.0.1 - - [27/Nov/2024 18:35:26] "[33mGET / HTTP/1.1[0m" 404 -
+2024-11-27 18:35:26,358 - 127.0.0.1 - - [27/Nov/2024 18:35:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-27 18:35:37,270 - 127.0.0.1 - - [27/Nov/2024 18:35:37] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-27 18:35:37,711 - 127.0.0.1 - - [27/Nov/2024 18:35:37] "GET /jobs HTTP/1.1" 200 -
+2024-11-27 18:36:02,564 - 127.0.0.1 - - [27/Nov/2024 18:36:02] "GET /jobs?company=삼성&location=서울 HTTP/1.1" 200 -
+2024-11-27 18:36:33,948 - 127.0.0.1 - - [27/Nov/2024 18:36:33] "[33mGET /jobs/all%0A HTTP/1.1[0m" 404 -
+2024-11-27 18:36:36,132 - 127.0.0.1 - - [27/Nov/2024 18:36:36] "[33mGET /jobs/alㅣ HTTP/1.1[0m" 404 -
+2024-11-27 18:36:39,609 - 127.0.0.1 - - [27/Nov/2024 18:36:39] "GET /jobs/all HTTP/1.1" 200 -
+2024-11-27 18:40:43,603 - 127.0.0.1 - - [27/Nov/2024 18:40:43] "[33mGET /jobs/서 HTTP/1.1[0m" 404 -
+2024-11-27 18:41:11,761 - 127.0.0.1 - - [27/Nov/2024 18:41:11] "GET /jobs?company=삼성&location=서울 HTTP/1.1" 200 -
+2024-11-27 18:41:15,781 - 127.0.0.1 - - [27/Nov/2024 18:41:15] "GET /jobs?company=삼성&location=서울 HTTP/1.1" 200 -
+2024-11-27 18:42:12,911 - 127.0.0.1 - - [27/Nov/2024 18:42:12] "GET /jobs HTTP/1.1" 200 -
+2024-11-27 18:43:05,297 - 127.0.0.1 - - [27/Nov/2024 18:43:05] "GET /jobs?company=삼성&location=서울 HTTP/1.1" 200 -
+2024-11-28 00:33:23,672 - 127.0.0.1 - - [28/Nov/2024 00:33:23] "GET /jobs?company=삼성&location=서울 HTTP/1.1" 200 -
+2024-11-28 00:33:31,662 - 127.0.0.1 - - [28/Nov/2024 00:33:31] "GET /jobs?company=locatio=서울 HTTP/1.1" 200 -
+2024-11-28 00:33:37,906 - 127.0.0.1 - - [28/Nov/2024 00:33:37] "GET /jobs?companylocatio=서울 HTTP/1.1" 200 -
+2024-11-29 00:03:13,545 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107839090>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,546 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1078382d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,547 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107839d10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,547 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10783ad50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,547 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10783bc50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,986 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c2850>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,988 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c16d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,988 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c2fd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,988 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c2350>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:13,988 - 시도 1/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c0cd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:15,566 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1078382d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:15,567 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10783bc50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:15,568 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107839d10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:15,568 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107839450>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:15,568 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10783bd90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:16,007 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c0cd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:16,008 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c2350>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:16,008 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c3250>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:16,009 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c34d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:16,009 - 시도 2/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c16d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:17,582 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10783bd90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:17,582 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107839450>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:17,583 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10783ad50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:17,583 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10783bc50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:17,583 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107839d10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:18,026 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=5 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c3250>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:18,027 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c2fd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:18,027 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c2350>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:18,027 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=4 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c16d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:18,028 - 시도 3/3 실패: HTTPSConnectionPool(host='www.saramin.co.kr', port=443): Max retries exceeded with url: /zf_user/search/recruit?searchType=search&searchword=python&recruitPage=3 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1077c3c50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-11-29 00:03:19,583 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=2 페이지 크롤링 실패!
+2024-11-29 00:03:19,587 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=4 페이지 크롤링 실패!
+2024-11-29 00:03:19,593 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=5 페이지 크롤링 실패!
+2024-11-29 00:03:19,594 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=3 페이지 크롤링 실패!
+2024-11-29 00:03:19,594 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=1 페이지 크롤링 실패!
+2024-11-29 00:03:20,033 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=4 페이지 크롤링 실패!
+2024-11-29 00:03:20,033 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=3 페이지 크롤링 실패!
+2024-11-29 00:03:20,035 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=2 페이지 크롤링 실패!
+2024-11-29 00:03:20,037 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=5 페이지 크롤링 실패!
+2024-11-29 00:03:20,037 - https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword=python&recruitPage=1 페이지 크롤링 실패!
+2024-11-29 10:32:59,968 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.55.43.125:5000
+2024-11-29 10:32:59,969 - [33mPress CTRL+C to quit[0m
+2024-11-29 10:32:59,969 -  * Restarting with stat
+2024-11-29 10:33:00,248 -  * Debugger is active!
+2024-11-29 10:33:00,254 -  * Debugger PIN: 527-388-488
+2024-11-29 10:34:00,441 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/__init__.py', reloading
+2024-11-29 10:34:00,714 -  * Restarting with stat
+2024-11-29 10:34:01,168 -  * Debugger is active!
+2024-11-29 10:34:01,173 -  * Debugger PIN: 527-388-488
+2024-11-29 10:34:41,988 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/models/job.py', reloading
+2024-11-29 10:34:42,469 -  * Restarting with stat
+2024-11-29 10:34:42,884 -  * Debugger is active!
+2024-11-29 10:34:42,888 -  * Debugger PIN: 527-388-488
+2024-11-29 10:35:06,298 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/utils/db_helper.py', reloading
+2024-11-29 10:35:06,555 -  * Restarting with stat
+2024-11-29 10:35:06,973 -  * Debugger is active!
+2024-11-29 10:35:06,978 -  * Debugger PIN: 527-388-488
+2024-11-29 10:39:28,859 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/models/job.py', reloading
+2024-11-29 10:39:29,285 -  * Restarting with stat
+2024-11-29 10:39:29,687 -  * Debugger is active!
+2024-11-29 10:39:29,692 -  * Debugger PIN: 527-388-488
+2024-11-29 11:13:49,254 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/models/job.py', reloading
+2024-11-29 11:13:49,587 -  * Restarting with stat
+2024-11-29 11:13:50,047 -  * Debugger is active!
+2024-11-29 11:13:50,052 -  * Debugger PIN: 527-388-488
+2024-11-29 11:13:57,156 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/models/user.py', reloading
+2024-11-29 11:13:57,627 -  * Restarting with stat
+2024-11-29 11:13:57,987 -  * Debugger is active!
+2024-11-29 11:13:57,993 -  * Debugger PIN: 527-388-488
+2024-11-29 11:14:04,136 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/models/job.py', reloading
+2024-11-29 11:14:04,545 -  * Restarting with stat
+2024-11-29 11:14:04,899 -  * Debugger is active!
+2024-11-29 11:14:04,904 -  * Debugger PIN: 527-388-488
+2024-11-29 11:14:21,254 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/models/application.py', reloading
+2024-11-29 11:14:21,524 -  * Restarting with stat
+2024-11-29 11:14:21,952 -  * Debugger is active!
+2024-11-29 11:14:21,957 -  * Debugger PIN: 527-388-488
+2024-11-29 11:14:52,521 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/models/bookmark.py', reloading
+2024-11-29 11:14:52,659 -  * Restarting with stat
+2024-11-29 11:14:53,090 -  * Debugger is active!
+2024-11-29 11:14:53,095 -  * Debugger PIN: 527-388-488
+2024-11-29 11:16:34,003 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/models/application.py', reloading
+2024-11-29 11:16:34,396 -  * Restarting with stat
+2024-11-29 11:16:34,816 -  * Debugger is active!
+2024-11-29 11:16:34,821 -  * Debugger PIN: 527-388-488
+2024-11-29 11:25:05,936 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/routes/auth_routes.py', reloading
+2024-11-29 11:25:06,294 -  * Restarting with stat
+2024-11-29 11:25:06,781 -  * Debugger is active!
+2024-11-29 11:25:06,787 -  * Debugger PIN: 527-388-488
+2024-11-29 11:49:37,994 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/routes/__init__.py', reloading
+2024-11-29 11:49:38,426 -  * Restarting with stat
+2024-11-29 16:15:56,198 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.67:5000
+2024-11-29 16:15:56,198 - [33mPress CTRL+C to quit[0m
+2024-11-29 16:15:56,199 -  * Restarting with stat
+2024-11-29 16:15:56,471 -  * Debugger is active!
+2024-11-29 16:15:56,479 -  * Debugger PIN: 527-388-488
+2024-11-29 16:16:06,112 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.67:5000
+2024-11-29 16:16:06,112 - [33mPress CTRL+C to quit[0m
+2024-11-29 16:16:06,112 -  * Restarting with stat
+2024-11-29 16:16:06,432 -  * Debugger is active!
+2024-11-29 16:16:06,436 -  * Debugger PIN: 527-388-488
