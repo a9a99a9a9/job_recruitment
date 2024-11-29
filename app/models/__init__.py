@@ -1,7 +1,8 @@
-from app.models.user import User
-from app.models.job import Job
-from app.models.application import Application
-from app.models.bookmark import Bookmark
+from pymongo import MongoClient
+import os
 
-# 모델 클래스 초기화
-__all__ = ['User', 'Job', 'Application', 'Bookmark']
+client = MongoClient(os.getenv('MONGO_URI', 'mongodb://localhost:27017/'))
+db = client.job_crawler  # 데이터베이스 이름
+
+# 각 모델에서 사용할 수 있도록 db를 export
+__all__ = ['db']

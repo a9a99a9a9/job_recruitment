@@ -212,3 +212,506 @@
 2024-11-29 16:16:06,112 -  * Restarting with stat
 2024-11-29 16:16:06,432 -  * Debugger is active!
 2024-11-29 16:16:06,436 -  * Debugger PIN: 527-388-488
+2024-11-29 16:17:36,459 - 127.0.0.1 - - [29/Nov/2024 16:17:36] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 16:17:50,196 - 127.0.0.1 - - [29/Nov/2024 16:17:50] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 16:18:02,601 - 127.0.0.1 - - [29/Nov/2024 16:18:02] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 16:18:41,202 - 127.0.0.1 - - [29/Nov/2024 16:18:41] "[33mPOST /auth/login HTTP/1.1[0m" 404 -
+2024-11-29 16:18:47,845 - 127.0.0.1 - - [29/Nov/2024 16:18:47] "[33mGET /jobs/all?company=LG&experience=5년%20이상 HTTP/1.1[0m" 404 -
+2024-11-29 16:19:13,499 - 127.0.0.1 - - [29/Nov/2024 16:19:13] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 16:19:21,644 - 127.0.0.1 - - [29/Nov/2024 16:19:21] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 16:22:02,864 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.67:5000
+2024-11-29 16:22:02,864 - [33mPress CTRL+C to quit[0m
+2024-11-29 16:22:02,865 -  * Restarting with stat
+2024-11-29 16:22:03,159 -  * Debugger is active!
+2024-11-29 16:22:03,165 -  * Debugger PIN: 527-388-488
+2024-11-29 16:22:09,493 - 127.0.0.1 - - [29/Nov/2024 16:22:09] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 16:22:10,300 - 127.0.0.1 - - [29/Nov/2024 16:22:10] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 16:22:10,927 - 127.0.0.1 - - [29/Nov/2024 16:22:10] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:25:08,350 - 127.0.0.1 - - [29/Nov/2024 22:25:08] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:25:09,114 - 127.0.0.1 - - [29/Nov/2024 22:25:09] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:25:12,784 - 127.0.0.1 - - [29/Nov/2024 22:25:12] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:25:25,889 - 127.0.0.1 - - [29/Nov/2024 22:25:25] "[33mGET /jobs/all?company=LG&experience=5년%20이상 HTTP/1.1[0m" 404 -
+2024-11-29 22:26:07,779 - 127.0.0.1 - - [29/Nov/2024 22:26:07] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:26:14,773 - 127.0.0.1 - - [29/Nov/2024 22:26:14] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:26:24,353 - 127.0.0.1 - - [29/Nov/2024 22:26:24] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:26:25,523 - 127.0.0.1 - - [29/Nov/2024 22:26:25] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:26:45,207 - 127.0.0.1 - - [29/Nov/2024 22:26:45] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:27:17,797 - 127.0.0.1 - - [29/Nov/2024 22:27:17] "[33mPOST /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:27:18,847 - 127.0.0.1 - - [29/Nov/2024 22:27:18] "[33mPOST /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:27:21,752 - 127.0.0.1 - - [29/Nov/2024 22:27:21] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:34:02,397 - 127.0.0.1 - - [29/Nov/2024 22:34:02] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:34:03,072 - 127.0.0.1 - - [29/Nov/2024 22:34:03] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:34:03,716 - 127.0.0.1 - - [29/Nov/2024 22:34:03] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:34:07,715 - 127.0.0.1 - - [29/Nov/2024 22:34:07] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:36:20,290 - 127.0.0.1 - - [29/Nov/2024 22:36:20] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:36:21,062 - 127.0.0.1 - - [29/Nov/2024 22:36:21] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:36:21,638 - 127.0.0.1 - - [29/Nov/2024 22:36:21] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:36:29,528 - 127.0.0.1 - - [29/Nov/2024 22:36:29] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:36:34,000 - 127.0.0.1 - - [29/Nov/2024 22:36:34] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:36:47,522 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 22:36:47,522 - [33mPress CTRL+C to quit[0m
+2024-11-29 22:36:47,523 -  * Restarting with stat
+2024-11-29 22:36:47,814 -  * Debugger is active!
+2024-11-29 22:36:47,821 -  * Debugger PIN: 527-388-488
+2024-11-29 22:36:54,690 - 127.0.0.1 - - [29/Nov/2024 22:36:54] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:36:55,443 - 127.0.0.1 - - [29/Nov/2024 22:36:55] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:36:56,038 - 127.0.0.1 - - [29/Nov/2024 22:36:56] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:40:51,765 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 22:40:51,765 - [33mPress CTRL+C to quit[0m
+2024-11-29 22:40:51,766 -  * Restarting with stat
+2024-11-29 22:40:52,077 -  * Debugger is active!
+2024-11-29 22:40:52,082 -  * Debugger PIN: 527-388-488
+2024-11-29 22:40:57,712 - 127.0.0.1 - - [29/Nov/2024 22:40:57] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:40:58,534 - 127.0.0.1 - - [29/Nov/2024 22:40:58] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:40:59,527 - 127.0.0.1 - - [29/Nov/2024 22:40:59] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:41:01,777 - 127.0.0.1 - - [29/Nov/2024 22:41:01] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:47:27,844 - 127.0.0.1 - - [29/Nov/2024 22:47:27] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:47:28,501 - 127.0.0.1 - - [29/Nov/2024 22:47:28] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 22:47:50,490 - 127.0.0.1 - - [29/Nov/2024 22:47:50] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:47:57,735 - 127.0.0.1 - - [29/Nov/2024 22:47:57] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:47:58,997 - 127.0.0.1 - - [29/Nov/2024 22:47:58] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:48:41,862 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 22:48:41,862 - [33mPress CTRL+C to quit[0m
+2024-11-29 22:48:41,863 -  * Restarting with stat
+2024-11-29 22:48:42,585 -  * Debugger is active!
+2024-11-29 22:48:42,597 -  * Debugger PIN: 527-388-488
+2024-11-29 22:51:35,859 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 22:51:35,859 - [33mPress CTRL+C to quit[0m
+2024-11-29 22:51:35,859 -  * Restarting with stat
+2024-11-29 22:51:36,152 -  * Debugger is active!
+2024-11-29 22:51:36,159 -  * Debugger PIN: 527-388-488
+2024-11-29 22:53:02,766 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/main.py', reloading
+2024-11-29 22:53:03,281 -  * Restarting with stat
+2024-11-29 22:53:03,712 -  * Debugger is active!
+2024-11-29 22:53:03,717 -  * Debugger PIN: 527-388-488
+2024-11-29 22:53:03,723 - 127.0.0.1 - - [29/Nov/2024 22:53:03] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:53:04,587 - 127.0.0.1 - - [29/Nov/2024 22:53:04] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:53:05,632 - 127.0.0.1 - - [29/Nov/2024 22:53:05] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:53:33,518 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 22:53:33,519 - [33mPress CTRL+C to quit[0m
+2024-11-29 22:53:33,519 -  * Restarting with stat
+2024-11-29 22:53:33,820 -  * Debugger is active!
+2024-11-29 22:53:33,828 -  * Debugger PIN: 527-388-488
+2024-11-29 22:55:44,218 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 22:55:44,218 - [33mPress CTRL+C to quit[0m
+2024-11-29 22:55:44,218 -  * Restarting with stat
+2024-11-29 22:55:44,512 -  * Debugger is active!
+2024-11-29 22:55:44,517 -  * Debugger PIN: 527-388-488
+2024-11-29 22:55:53,806 - 127.0.0.1 - - [29/Nov/2024 22:55:53] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:55:54,608 - 127.0.0.1 - - [29/Nov/2024 22:55:54] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:55:55,161 - 127.0.0.1 - - [29/Nov/2024 22:55:55] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 22:59:56,961 - 127.0.0.1 - - [29/Nov/2024 22:59:56] "[33mGET /health HTTP/1.1[0m" 404 -
+2024-11-29 23:11:45,578 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:11:45,578 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:11:45,578 -  * Restarting with stat
+2024-11-29 23:11:45,877 -  * Debugger is active!
+2024-11-29 23:11:45,884 -  * Debugger PIN: 527-388-488
+2024-11-29 23:11:51,903 - 127.0.0.1 - - [29/Nov/2024 23:11:51] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 23:11:59,428 - 127.0.0.1 - - [29/Nov/2024 23:11:59] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:14:31,437 - 127.0.0.1 - - [29/Nov/2024 23:14:31] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:14:32,306 - 127.0.0.1 - - [29/Nov/2024 23:14:32] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:15:23,033 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:15:23,033 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:15:23,033 -  * Restarting with stat
+2024-11-29 23:15:23,336 -  * Debugger is active!
+2024-11-29 23:15:23,343 -  * Debugger PIN: 527-388-488
+2024-11-29 23:15:33,370 - 127.0.0.1 - - [29/Nov/2024 23:15:33] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:15:34,120 - 127.0.0.1 - - [29/Nov/2024 23:15:34] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:15:34,523 - 127.0.0.1 - - [29/Nov/2024 23:15:34] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:15:35,692 - 127.0.0.1 - - [29/Nov/2024 23:15:35] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:15:36,275 - 127.0.0.1 - - [29/Nov/2024 23:15:36] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:15:37,985 - 127.0.0.1 - - [29/Nov/2024 23:15:37] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-29 23:16:02,593 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:16:02,593 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:16:02,595 -  * Restarting with stat
+2024-11-29 23:16:03,318 -  * Debugger is active!
+2024-11-29 23:16:03,325 -  * Debugger PIN: 527-388-488
+2024-11-29 23:16:16,208 - 127.0.0.1 - - [29/Nov/2024 23:16:16] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:16:17,147 - 127.0.0.1 - - [29/Nov/2024 23:16:17] "[33mGET /jobs%0A HTTP/1.1[0m" 404 -
+2024-11-29 23:16:48,504 - 127.0.0.1 - - [29/Nov/2024 23:16:48] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:16:50,499 - 127.0.0.1 - - [29/Nov/2024 23:16:50] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:16:53,986 - 127.0.0.1 - - [29/Nov/2024 23:16:53] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:18:54,787 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:18:54,787 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:18:54,788 -  * Restarting with stat
+2024-11-29 23:18:55,557 -  * Debugger is active!
+2024-11-29 23:18:55,565 -  * Debugger PIN: 527-388-488
+2024-11-29 23:19:13,908 - 127.0.0.1 - - [29/Nov/2024 23:19:13] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:20:20,121 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:20:20,121 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:20:20,122 -  * Restarting with stat
+2024-11-29 23:20:20,419 -  * Debugger is active!
+2024-11-29 23:20:20,425 -  * Debugger PIN: 527-388-488
+2024-11-29 23:20:59,687 - 127.0.0.1 - - [29/Nov/2024 23:20:59] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:21:00,538 - 127.0.0.1 - - [29/Nov/2024 23:21:00] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:21:01,177 - 127.0.0.1 - - [29/Nov/2024 23:21:01] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:21:01,783 - 127.0.0.1 - - [29/Nov/2024 23:21:01] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:21:04,305 - 127.0.0.1 - - [29/Nov/2024 23:21:04] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:21:05,023 - 127.0.0.1 - - [29/Nov/2024 23:21:05] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:21:30,728 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/main.py', reloading
+2024-11-29 23:21:30,952 -  * Restarting with stat
+2024-11-29 23:22:29,159 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:22:29,159 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:22:29,160 -  * Restarting with stat
+2024-11-29 23:22:29,539 -  * Debugger is active!
+2024-11-29 23:22:29,547 -  * Debugger PIN: 527-388-488
+2024-11-29 23:22:40,959 - 127.0.0.1 - - [29/Nov/2024 23:22:40] "GET /health HTTP/1.1" 200 -
+2024-11-29 23:23:24,010 - 127.0.0.1 - - [29/Nov/2024 23:23:24] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:47:58,286 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:47:58,287 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:47:58,287 -  * Restarting with stat
+2024-11-29 23:47:58,986 -  * Debugger is active!
+2024-11-29 23:47:59,003 -  * Debugger PIN: 527-388-488
+2024-11-29 23:48:07,268 - 127.0.0.1 - - [29/Nov/2024 23:48:07] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:48:09,059 - 127.0.0.1 - - [29/Nov/2024 23:48:09] "[33mPOST /auth/register HTTP/1.1[0m" 404 -
+2024-11-29 23:48:14,344 - 127.0.0.1 - - [29/Nov/2024 23:48:14] "[31m[1mPOST /health HTTP/1.1[0m" 405 -
+2024-11-29 23:48:15,655 - 127.0.0.1 - - [29/Nov/2024 23:48:15] "[31m[1mPOST /health HTTP/1.1[0m" 405 -
+2024-11-29 23:48:41,899 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:48:41,899 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:48:41,899 -  * Restarting with stat
+2024-11-29 23:48:42,227 -  * Debugger is active!
+2024-11-29 23:48:42,233 -  * Debugger PIN: 527-388-488
+2024-11-29 23:48:46,638 - 127.0.0.1 - - [29/Nov/2024 23:48:46] "[31m[1mPOST /health HTTP/1.1[0m" 405 -
+2024-11-29 23:48:49,307 - 127.0.0.1 - - [29/Nov/2024 23:48:49] "[31m[1mPOST /health HTTP/1.1[0m" 405 -
+2024-11-29 23:48:51,832 - 127.0.0.1 - - [29/Nov/2024 23:48:51] "GET /health HTTP/1.1" 200 -
+2024-11-29 23:48:52,988 - 127.0.0.1 - - [29/Nov/2024 23:48:52] "GET /health HTTP/1.1" 200 -
+2024-11-29 23:50:31,820 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.1.92:5000
+2024-11-29 23:50:31,820 - [33mPress CTRL+C to quit[0m
+2024-11-29 23:50:31,821 -  * Restarting with stat
+2024-11-29 23:50:32,128 -  * Debugger is active!
+2024-11-29 23:50:32,134 -  * Debugger PIN: 527-388-488
+2024-11-29 23:50:35,431 - 127.0.0.1 - - [29/Nov/2024 23:50:35] "GET /health HTTP/1.1" 200 -
+2024-11-29 23:50:50,156 - 127.0.0.1 - - [29/Nov/2024 23:50:50] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-29 23:51:21,696 - 127.0.0.1 - - [29/Nov/2024 23:51:21] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-29 23:51:22,430 - 127.0.0.1 - - [29/Nov/2024 23:51:22] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-29 23:51:23,590 - 127.0.0.1 - - [29/Nov/2024 23:51:23] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-29 23:51:27,893 - 127.0.0.1 - - [29/Nov/2024 23:51:27] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-29 23:51:39,073 - 127.0.0.1 - - [29/Nov/2024 23:51:39] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-29 23:51:47,982 - 127.0.0.1 - - [29/Nov/2024 23:51:47] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-29 23:52:00,433 - 127.0.0.1 - - [29/Nov/2024 23:52:00] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-29 23:52:01,224 - 127.0.0.1 - - [29/Nov/2024 23:52:01] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-30 00:10:29,718 - 127.0.0.1 - - [30/Nov/2024 00:10:29] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-30 00:10:30,377 - 127.0.0.1 - - [30/Nov/2024 00:10:30] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-30 00:10:33,403 - 127.0.0.1 - - [30/Nov/2024 00:10:33] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-30 00:11:01,550 - 127.0.0.1 - - [30/Nov/2024 00:11:01] "[31m[1mPOST /auth/login HTTP/1.1[0m" 415 -
+2024-11-30 00:11:02,336 - 127.0.0.1 - - [30/Nov/2024 00:11:02] "[31m[1mPOST /auth/login HTTP/1.1[0m" 415 -
+2024-11-30 00:11:02,972 - 127.0.0.1 - - [30/Nov/2024 00:11:02] "[31m[1mPOST /auth/login HTTP/1.1[0m" 415 -
+2024-11-30 00:12:18,070 - 127.0.0.1 - - [30/Nov/2024 00:12:18] "[31m[1mPOST /auth/login HTTP/1.1[0m" 400 -
+2024-11-30 00:12:18,901 - 127.0.0.1 - - [30/Nov/2024 00:12:18] "[31m[1mPOST /auth/login HTTP/1.1[0m" 400 -
+2024-11-30 00:12:19,534 - 127.0.0.1 - - [30/Nov/2024 00:12:19] "[31m[1mPOST /auth/login HTTP/1.1[0m" 400 -
+2024-11-30 00:12:20,205 - 127.0.0.1 - - [30/Nov/2024 00:12:20] "[31m[1mPOST /auth/login HTTP/1.1[0m" 400 -
+2024-11-30 00:12:43,268 - 127.0.0.1 - - [30/Nov/2024 00:12:43] "[31m[1mPOST /auth/login HTTP/1.1[0m" 415 -
+2024-11-30 00:12:43,963 - 127.0.0.1 - - [30/Nov/2024 00:12:43] "[31m[1mPOST /auth/login HTTP/1.1[0m" 415 -
+2024-11-30 00:13:49,651 - 127.0.0.1 - - [30/Nov/2024 00:13:49] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-30 00:13:50,439 - 127.0.0.1 - - [30/Nov/2024 00:13:50] "[31m[1mPOST /auth/register HTTP/1.1[0m" 415 -
+2024-11-30 00:13:57,373 - 127.0.0.1 - - [30/Nov/2024 00:13:57] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:13:58,315 - 127.0.0.1 - - [30/Nov/2024 00:13:58] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:14:01,406 - 127.0.0.1 - - [30/Nov/2024 00:14:01] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:14:01,932 - 127.0.0.1 - - [30/Nov/2024 00:14:01] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:14:07,048 - 127.0.0.1 - - [30/Nov/2024 00:14:07] "[33mGET /job HTTP/1.1[0m" 404 -
+2024-11-30 00:14:07,782 - 127.0.0.1 - - [30/Nov/2024 00:14:07] "[33mGET /job HTTP/1.1[0m" 404 -
+2024-11-30 00:14:39,300 - 127.0.0.1 - - [30/Nov/2024 00:14:39] "[31m[1mPOST /health HTTP/1.1[0m" 405 -
+2024-11-30 00:14:42,315 - 127.0.0.1 - - [30/Nov/2024 00:14:42] "[31m[1mPOST /health HTTP/1.1[0m" 405 -
+2024-11-30 00:14:46,110 - 127.0.0.1 - - [30/Nov/2024 00:14:46] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:15:00,833 - 127.0.0.1 - - [30/Nov/2024 00:15:00] "[31m[1mGET /auth/profile HTTP/1.1[0m" 405 -
+2024-11-30 00:15:01,825 - 127.0.0.1 - - [30/Nov/2024 00:15:01] "[31m[1mGET /auth/profile HTTP/1.1[0m" 405 -
+2024-11-30 00:15:45,248 - 127.0.0.1 - - [30/Nov/2024 00:15:45] "[31m[1mGET /auth/profile HTTP/1.1[0m" 405 -
+2024-11-30 00:16:05,055 - 127.0.0.1 - - [30/Nov/2024 00:16:05] "[31m[1mPUT /auth/profile HTTP/1.1[0m" 401 -
+2024-11-30 00:16:06,003 - 127.0.0.1 - - [30/Nov/2024 00:16:06] "[31m[1mPUT /auth/profile HTTP/1.1[0m" 401 -
+2024-11-30 00:20:25,135 - 127.0.0.1 - - [30/Nov/2024 00:20:25] "[33mPUT /api/data HTTP/1.1[0m" 404 -
+2024-11-30 00:20:28,809 - 127.0.0.1 - - [30/Nov/2024 00:20:28] "[33mGET /api/data HTTP/1.1[0m" 404 -
+2024-11-30 00:20:29,852 - 127.0.0.1 - - [30/Nov/2024 00:20:29] "[33mGET /api/data HTTP/1.1[0m" 404 -
+2024-11-30 00:20:49,043 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:20:49,043 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:20:49,043 -  * Restarting with stat
+2024-11-30 00:20:49,804 -  * Debugger is active!
+2024-11-30 00:20:49,818 -  * Debugger PIN: 527-388-488
+2024-11-30 00:21:18,798 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:21:18,798 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:21:18,798 -  * Restarting with stat
+2024-11-30 00:21:19,088 -  * Debugger is active!
+2024-11-30 00:21:19,094 -  * Debugger PIN: 527-388-488
+2024-11-30 00:21:30,497 - 127.0.0.1 - - [30/Nov/2024 00:21:30] "[33mGET /jobs?company=삼성&location=서울 HTTP/1.1[0m" 404 -
+2024-11-30 00:21:42,482 - 127.0.0.1 - - [30/Nov/2024 00:21:42] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:23:58,826 - 127.0.0.1 - - [30/Nov/2024 00:23:58] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:23:59,964 - 127.0.0.1 - - [30/Nov/2024 00:23:59] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:24:39,656 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:24:39,657 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:24:39,657 -  * Restarting with stat
+2024-11-30 00:24:39,956 -  * Debugger is active!
+2024-11-30 00:24:39,964 -  * Debugger PIN: 527-388-488
+2024-11-30 00:24:44,417 - 127.0.0.1 - - [30/Nov/2024 00:24:44] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:24:45,399 - 127.0.0.1 - - [30/Nov/2024 00:24:45] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:24:46,032 - 127.0.0.1 - - [30/Nov/2024 00:24:46] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:25:18,999 - 127.0.0.1 - - [30/Nov/2024 00:25:18] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:26:43,647 - 127.0.0.1 - - [30/Nov/2024 00:26:43] "[33mGET /api/jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:26:44,537 - 127.0.0.1 - - [30/Nov/2024 00:26:44] "[33mGET /api/jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:28:22,031 - 127.0.0.1 - - [30/Nov/2024 00:28:22] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:33:40,030 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:33:40,030 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:33:40,030 -  * Restarting with stat
+2024-11-30 00:33:40,328 -  * Debugger is active!
+2024-11-30 00:33:40,335 -  * Debugger PIN: 527-388-488
+2024-11-30 00:33:44,687 - 127.0.0.1 - - [30/Nov/2024 00:33:44] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:33:47,061 - 127.0.0.1 - - [30/Nov/2024 00:33:47] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:34:24,445 - 127.0.0.1 - - [30/Nov/2024 00:34:24] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:34:25,106 - 127.0.0.1 - - [30/Nov/2024 00:34:25] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:34:26,515 - 127.0.0.1 - - [30/Nov/2024 00:34:26] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:34:27,059 - 127.0.0.1 - - [30/Nov/2024 00:34:27] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:34:37,471 - 127.0.0.1 - - [30/Nov/2024 00:34:37] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:34:41,222 - 127.0.0.1 - - [30/Nov/2024 00:34:41] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:34:41,787 - 127.0.0.1 - - [30/Nov/2024 00:34:41] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:35:34,337 - 127.0.0.1 - - [30/Nov/2024 00:35:34] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:35:34,938 - 127.0.0.1 - - [30/Nov/2024 00:35:34] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:36:54,894 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:36:54,894 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:36:54,895 -  * Restarting with stat
+2024-11-30 00:36:55,192 -  * Debugger is active!
+2024-11-30 00:36:55,200 -  * Debugger PIN: 527-388-488
+2024-11-30 00:36:59,543 - 127.0.0.1 - - [30/Nov/2024 00:36:59] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:37:00,279 - 127.0.0.1 - - [30/Nov/2024 00:37:00] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:37:02,270 - 127.0.0.1 - - [30/Nov/2024 00:37:02] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:37:02,918 - 127.0.0.1 - - [30/Nov/2024 00:37:02] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:37:04,473 - 127.0.0.1 - - [30/Nov/2024 00:37:04] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:37:32,988 - 127.0.0.1 - - [30/Nov/2024 00:37:32] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:37:41,405 - 127.0.0.1 - - [30/Nov/2024 00:37:41] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:39:22,239 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:39:22,239 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:39:22,240 -  * Restarting with stat
+2024-11-30 00:39:22,531 -  * Debugger is active!
+2024-11-30 00:39:22,538 -  * Debugger PIN: 527-388-488
+2024-11-30 00:40:26,842 - 127.0.0.1 - - [30/Nov/2024 00:40:26] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:43:24,157 - 127.0.0.1 - - [30/Nov/2024 00:43:24] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:43:25,034 - 127.0.0.1 - - [30/Nov/2024 00:43:25] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:43:33,825 - 127.0.0.1 - - [30/Nov/2024 00:43:33] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:43:36,843 - 127.0.0.1 - - [30/Nov/2024 00:43:36] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:45:39,956 - 127.0.0.1 - - [30/Nov/2024 00:45:39] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:45:41,701 - 127.0.0.1 - - [30/Nov/2024 00:45:41] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:45:42,424 - 127.0.0.1 - - [30/Nov/2024 00:45:42] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:55:09,487 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:55:09,487 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:55:09,487 -  * Restarting with stat
+2024-11-30 00:55:09,773 -  * Debugger is active!
+2024-11-30 00:55:09,781 -  * Debugger PIN: 527-388-488
+2024-11-30 00:55:33,250 - 127.0.0.1 - - [30/Nov/2024 00:55:33] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:55:35,341 - 127.0.0.1 - - [30/Nov/2024 00:55:35] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:55:35,961 - 127.0.0.1 - - [30/Nov/2024 00:55:35] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:55:36,455 - 127.0.0.1 - - [30/Nov/2024 00:55:36] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:58:53,625 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:58:53,625 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:58:53,626 -  * Restarting with stat
+2024-11-30 00:58:53,938 -  * Debugger is active!
+2024-11-30 00:58:53,944 -  * Debugger PIN: 527-388-488
+2024-11-30 00:59:00,678 - 127.0.0.1 - - [30/Nov/2024 00:59:00] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:59:01,347 - 127.0.0.1 - - [30/Nov/2024 00:59:01] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:59:05,332 - 127.0.0.1 - - [30/Nov/2024 00:59:05] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:59:05,994 - 127.0.0.1 - - [30/Nov/2024 00:59:05] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:59:23,842 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2024-11-30 00:59:23,842 - [33mPress CTRL+C to quit[0m
+2024-11-30 00:59:23,842 -  * Restarting with stat
+2024-11-30 00:59:24,132 -  * Debugger is active!
+2024-11-30 00:59:24,138 -  * Debugger PIN: 527-388-488
+2024-11-30 00:59:31,673 - 127.0.0.1 - - [30/Nov/2024 00:59:31] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:59:32,575 - 127.0.0.1 - - [30/Nov/2024 00:59:32] "GET /health HTTP/1.1" 200 -
+2024-11-30 00:59:36,416 - 127.0.0.1 - - [30/Nov/2024 00:59:36] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:59:37,428 - 127.0.0.1 - - [30/Nov/2024 00:59:37] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 00:59:41,200 - 127.0.0.1 - - [30/Nov/2024 00:59:41] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:02:03,488 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2024-11-30 01:02:03,488 - [33mPress CTRL+C to quit[0m
+2024-11-30 01:02:03,488 -  * Restarting with stat
+2024-11-30 01:02:03,779 -  * Debugger is active!
+2024-11-30 01:02:03,786 -  * Debugger PIN: 527-388-488
+2024-11-30 01:02:19,172 - 127.0.0.1 - - [30/Nov/2024 01:02:19] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:02:25,140 - 127.0.0.1 - - [30/Nov/2024 01:02:25] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:02:26,734 - 127.0.0.1 - - [30/Nov/2024 01:02:26] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:02:52,471 - 127.0.0.1 - - [30/Nov/2024 01:02:52] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:03:39,528 - 127.0.0.1 - - [30/Nov/2024 01:03:39] "[33mGET /jobs/ HTTP/1.1[0m" 404 -
+2024-11-30 01:03:40,696 - 127.0.0.1 - - [30/Nov/2024 01:03:40] "[33mGET /jobs/ HTTP/1.1[0m" 404 -
+2024-11-30 01:03:43,194 - 127.0.0.1 - - [30/Nov/2024 01:03:43] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:06:32,199 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2024-11-30 01:06:32,199 - [33mPress CTRL+C to quit[0m
+2024-11-30 01:06:32,200 -  * Restarting with stat
+2024-11-30 01:06:32,496 -  * Debugger is active!
+2024-11-30 01:06:32,503 -  * Debugger PIN: 527-388-488
+2024-11-30 01:06:36,218 - 127.0.0.1 - - [30/Nov/2024 01:06:36] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:06:37,004 - 127.0.0.1 - - [30/Nov/2024 01:06:37] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:06:54,791 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2024-11-30 01:06:54,791 - [33mPress CTRL+C to quit[0m
+2024-11-30 01:06:54,791 -  * Restarting with stat
+2024-11-30 01:06:55,102 -  * Debugger is active!
+2024-11-30 01:06:55,108 -  * Debugger PIN: 527-388-488
+2024-11-30 01:06:59,397 - 127.0.0.1 - - [30/Nov/2024 01:06:59] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:07:01,759 - 127.0.0.1 - - [30/Nov/2024 01:07:01] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:07:02,507 - 127.0.0.1 - - [30/Nov/2024 01:07:02] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:07:17,871 - 127.0.0.1 - - [30/Nov/2024 01:07:17] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:07:20,477 - 127.0.0.1 - - [30/Nov/2024 01:07:20] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:07:21,365 - 127.0.0.1 - - [30/Nov/2024 01:07:21] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:07:24,980 - 127.0.0.1 - - [30/Nov/2024 01:07:24] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:08:32,488 - 127.0.0.1 - - [30/Nov/2024 01:08:32] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:08:39,847 - 127.0.0.1 - - [30/Nov/2024 01:08:39] "[33mGET /api/jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:08:45,118 - 127.0.0.1 - - [30/Nov/2024 01:08:45] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:08:49,230 - 127.0.0.1 - - [30/Nov/2024 01:08:49] "[33mGET /jobs/hjobs HTTP/1.1[0m" 404 -
+2024-11-30 01:08:51,713 - 127.0.0.1 - - [30/Nov/2024 01:08:51] "[33mGET /jobs/jovs HTTP/1.1[0m" 404 -
+2024-11-30 01:08:52,927 - 127.0.0.1 - - [30/Nov/2024 01:08:52] "[35m[1mGET /jobs/jobs HTTP/1.1[0m" 500 -
+2024-11-30 01:09:04,246 - 127.0.0.1 - - [30/Nov/2024 01:09:04] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:19:38,963 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2024-11-30 01:19:38,963 - [33mPress CTRL+C to quit[0m
+2024-11-30 01:19:38,963 -  * Restarting with stat
+2024-11-30 01:19:39,272 -  * Debugger is active!
+2024-11-30 01:19:39,279 -  * Debugger PIN: 527-388-488
+2024-11-30 01:19:43,942 - 127.0.0.1 - - [30/Nov/2024 01:19:43] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:19:47,118 - 127.0.0.1 - - [30/Nov/2024 01:19:47] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:19:51,422 - 127.0.0.1 - - [30/Nov/2024 01:19:51] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:22:16,649 - 127.0.0.1 - - [30/Nov/2024 01:22:16] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:22:16,678 - 127.0.0.1 - - [30/Nov/2024 01:22:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-30 01:22:19,606 - 127.0.0.1 - - [30/Nov/2024 01:22:19] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:24:02,874 - 127.0.0.1 - - [30/Nov/2024 01:24:02] "[31m[1mGET /auth/profile HTTP/1.1[0m" 405 -
+2024-11-30 01:24:06,471 - 127.0.0.1 - - [30/Nov/2024 01:24:06] "[31m[1mGET /auth/profile HTTP/1.1[0m" 405 -
+2024-11-30 01:26:17,439 - 127.0.0.1 - - [30/Nov/2024 01:26:17] "[31m[1mGET /auth/profile HTTP/1.1[0m" 405 -
+2024-11-30 01:26:18,126 - 127.0.0.1 - - [30/Nov/2024 01:26:18] "[31m[1mGET /auth/profile HTTP/1.1[0m" 405 -
+2024-11-30 01:26:25,168 - 127.0.0.1 - - [30/Nov/2024 01:26:25] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:26:28,089 - 127.0.0.1 - - [30/Nov/2024 01:26:28] "[31m[1mGET /auth/profile HTTP/1.1[0m" 405 -
+2024-11-30 01:26:34,601 - 127.0.0.1 - - [30/Nov/2024 01:26:34] "[33mGET /jobs HTTP/1.1[0m" 404 -
+2024-11-30 01:30:03,144 - 127.0.0.1 - - [30/Nov/2024 01:30:03] "[35m[1mGET /jobs/jobs HTTP/1.1[0m" 500 -
+2024-11-30 01:32:02,213 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2024-11-30 01:32:02,213 - [33mPress CTRL+C to quit[0m
+2024-11-30 01:32:02,213 -  * Restarting with stat
+2024-11-30 01:32:02,531 -  * Debugger is active!
+2024-11-30 01:32:02,538 -  * Debugger PIN: 527-388-488
+2024-11-30 01:32:08,316 - 127.0.0.1 - - [30/Nov/2024 01:32:08] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:32:08,341 - 127.0.0.1 - - [30/Nov/2024 01:32:08] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:32:10,229 - 127.0.0.1 - - [30/Nov/2024 01:32:10] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:32:10,249 - 127.0.0.1 - - [30/Nov/2024 01:32:10] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:32:19,174 - 127.0.0.1 - - [30/Nov/2024 01:32:19] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:32:19,193 - 127.0.0.1 - - [30/Nov/2024 01:32:19] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:32:25,227 - 127.0.0.1 - - [30/Nov/2024 01:32:25] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:32:28,062 - 127.0.0.1 - - [30/Nov/2024 01:32:28] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:32:28,088 - 127.0.0.1 - - [30/Nov/2024 01:32:28] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:34:09,911 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2024-11-30 01:34:09,911 - [33mPress CTRL+C to quit[0m
+2024-11-30 01:34:09,911 -  * Restarting with stat
+2024-11-30 01:34:10,227 -  * Debugger is active!
+2024-11-30 01:34:10,234 -  * Debugger PIN: 527-388-488
+2024-11-30 01:35:24,660 - 127.0.0.1 - - [30/Nov/2024 01:35:24] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:35:24,686 - 127.0.0.1 - - [30/Nov/2024 01:35:24] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:35:25,415 - 127.0.0.1 - - [30/Nov/2024 01:35:25] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:35:25,439 - 127.0.0.1 - - [30/Nov/2024 01:35:25] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:40:00,446 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2024-11-30 01:40:00,446 - [33mPress CTRL+C to quit[0m
+2024-11-30 01:40:00,446 -  * Restarting with stat
+2024-11-30 01:40:00,755 -  * Debugger is active!
+2024-11-30 01:40:00,763 -  * Debugger PIN: 527-388-488
+2024-11-30 01:40:05,414 - 127.0.0.1 - - [30/Nov/2024 01:40:05] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:40:05,450 - 127.0.0.1 - - [30/Nov/2024 01:40:05] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:40:07,030 - 127.0.0.1 - - [30/Nov/2024 01:40:07] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:40:07,051 - 127.0.0.1 - - [30/Nov/2024 01:40:07] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:40:09,804 - 127.0.0.1 - - [30/Nov/2024 01:40:09] "GET /health HTTP/1.1" 200 -
+2024-11-30 01:40:13,770 - 127.0.0.1 - - [30/Nov/2024 01:40:13] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:40:13,790 - 127.0.0.1 - - [30/Nov/2024 01:40:13] "[35m[1mGET /jobs/ HTTP/1.1[0m" 500 -
+2024-11-30 01:41:10,086 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.103:5001
+2024-11-30 01:41:10,086 - [33mPress CTRL+C to quit[0m
+2024-11-30 01:41:10,087 -  * Restarting with stat
+2024-11-30 01:41:10,399 -  * Debugger is active!
+2024-11-30 01:41:10,405 -  * Debugger PIN: 527-388-488
+2024-11-30 01:41:14,153 - 127.0.0.1 - - [30/Nov/2024 01:41:14] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-11-30 01:41:14,194 - 127.0.0.1 - - [30/Nov/2024 01:41:14] "GET /jobs/ HTTP/1.1" 200 -
+2024-11-30 01:41:19,589 - 127.0.0.1 - - [30/Nov/2024 01:41:19] "GET /health HTTP/1.1" 200 -
