@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 from flask_pymongo import PyMongo
+from flasgger import Swagger, swag_from
 from app.routes.auth_routes import auth_routes
 from app.routes.job_routes import job_routes
 from app.routes.application_routes import application_routes
@@ -31,6 +32,40 @@ def create_app():
     app = Flask(__name__)
     CORS(app)  # CORS 설정 추가
 
+    # Swagger 설정
+    swagger_config = {
+        "swagger": "2.0",
+        "info": {
+            "title": "Job Crawler API",
+            "description": "Job crawler API 문서",
+            "version": "1.0.0",
+            "contact": {
+                "name": "Developer",
+                "email": "developer@example.com",
+            },
+        },
+        "host": "127.0.0.1:5001",  # 호스트와 포트 설정
+        "basePath": "/",
+        "specs": [
+            {
+                "endpoint": "apispec",
+                "route": "/apispec.json",
+                "rule_filter": lambda rule: True,
+                "model_filter": lambda tag: True,
+            }
+        ],
+        "headers": [],  # 오류 방지를 위해 추가
+    }
+    swagger_template = {
+        "swagger": "2.0",
+        "info": {
+            "title": "Job Crawler API",
+            "description": "Job crawler API 문서",
+            "version": "1.0.0",
+        },
+    }
+    Swagger(app, config=swagger_config, template=swagger_template)
+
     # 환경 변수 설정
     app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY', 'your_secret_key')
     app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost:27017/job_crawler')
@@ -46,8 +81,30 @@ def create_app():
 
     # 상태 확인용 헬스체크 엔드포인트
     @app.route('/health', methods=['GET'])
+    @swag_from({
+        "responses": {
+            200: {
+                "description": "Flask 앱 상태 확인",
+                "examples": {
+                    "application/json": {
+                        "status": "running",
+                        "message": "Flask 앱이 정상적으로 실행 중입니다."
+                    }
+                }
+            }
+        }
+    })
     def health_check():
         return jsonify({"status": "running", "message": "Flask 앱이 정상적으로 실행 중입니다."}), 200
+
+    # 루트 경로 처리
+    @app.route('/', methods=['GET'], strict_slashes=False)
+    def root():
+        return (
+            "<h1>Flask 앱이 정상적으로 실행 중입니다!</h1>"
+            "<p>추가 경로: <a href='/health'>/health</a></p>"
+            "<p>API 문서 확인: <a href='/apidocs'>Swagger UI</a></p>"
+        ), 200
 
     logger.info("Flask 애플리케이션 생성 및 블루프린트 등록 완료.")
     return app

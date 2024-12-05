@@ -1245,3 +1245,192 @@
 2024-11-30 03:47:01,927 - 127.0.0.1 - - [30/Nov/2024 03:47:01] "GET /applications/?user_id=674a0918951eb69e155e915e9151 HTTP/1.1" 200 -
 2024-12-05 16:17:27,742 -  * Debugger is active!
 2024-12-05 16:17:27,748 -  * Debugger PIN: 527-388-488
+2024-12-05 16:19:19,952 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.55.16:5001
+2024-12-05 16:19:19,952 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:19:19,952 -  * Restarting with stat
+2024-12-05 16:19:20,253 -  * Debugger is active!
+2024-12-05 16:19:20,259 -  * Debugger PIN: 527-388-488
+2024-12-05 16:19:24,719 - 127.0.0.1 - - [05/Dec/2024 16:19:24] "GET /health HTTP/1.1" 200 -
+2024-12-05 16:19:25,826 - 127.0.0.1 - - [05/Dec/2024 16:19:25] "GET /health HTTP/1.1" 200 -
+2024-12-05 16:19:26,883 - 127.0.0.1 - - [05/Dec/2024 16:19:26] "GET /health HTTP/1.1" 200 -
+2024-12-05 16:19:30,287 - 127.0.0.1 - - [05/Dec/2024 16:19:30] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-05 16:19:32,864 - 127.0.0.1 - - [05/Dec/2024 16:19:32] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-05 16:19:33,388 - 127.0.0.1 - - [05/Dec/2024 16:19:33] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-05 16:19:45,561 - 127.0.0.1 - - [05/Dec/2024 16:19:45] "GET /health HTTP/1.1" 200 -
+2024-12-05 16:28:45,650 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.55.16:5001
+2024-12-05 16:28:45,650 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:28:45,651 -  * Restarting with stat
+2024-12-05 16:28:46,151 -  * Debugger is active!
+2024-12-05 16:28:46,158 -  * Debugger PIN: 527-388-488
+2024-12-05 16:28:49,549 - 127.0.0.1 - - [05/Dec/2024 16:28:49] "GET /health HTTP/1.1" 200 -
+2024-12-05 16:31:07,782 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.55.16:5001
+2024-12-05 16:31:07,782 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:31:07,783 -  * Restarting with stat
+2024-12-05 16:31:08,299 -  * Debugger is active!
+2024-12-05 16:31:08,308 -  * Debugger PIN: 527-388-488
+2024-12-05 16:34:29,014 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.55.16:5001
+2024-12-05 16:34:29,014 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:34:29,015 -  * Restarting with stat
+2024-12-05 16:34:29,334 -  * Debugger is active!
+2024-12-05 16:34:29,344 -  * Debugger PIN: 527-388-488
+2024-12-05 16:34:43,345 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.55.16:5001
+2024-12-05 16:34:43,345 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:34:43,346 -  * Restarting with stat
+2024-12-05 16:34:43,653 -  * Debugger is active!
+2024-12-05 16:34:43,658 -  * Debugger PIN: 527-388-488
+2024-12-05 16:37:27,107 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.55.16:5001
+2024-12-05 16:37:27,107 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:37:27,108 -  * Restarting with stat
+2024-12-05 16:37:27,454 -  * Debugger is active!
+2024-12-05 16:37:27,461 -  * Debugger PIN: 527-388-488
+2024-12-05 16:37:33,427 - 127.0.0.1 - - [05/Dec/2024 16:37:33] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2024-12-05 16:37:33,445 - 127.0.0.1 - - [05/Dec/2024 16:37:33] "GET /health?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-05 16:37:33,446 - 127.0.0.1 - - [05/Dec/2024 16:37:33] "GET /health?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-05 16:37:33,450 - 127.0.0.1 - - [05/Dec/2024 16:37:33] "GET /health?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-05 16:37:33,462 - 127.0.0.1 - - [05/Dec/2024 16:37:33] "[36mGET /health?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-05 16:37:34,378 - 127.0.0.1 - - [05/Dec/2024 16:37:34] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2024-12-05 16:37:34,391 - 127.0.0.1 - - [05/Dec/2024 16:37:34] "[36mGET /health?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-05 16:37:34,391 - 127.0.0.1 - - [05/Dec/2024 16:37:34] "[36mGET /health?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-05 16:37:34,398 - 127.0.0.1 - - [05/Dec/2024 16:37:34] "[36mGET /health?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-05 16:37:34,401 - 127.0.0.1 - - [05/Dec/2024 16:37:34] "[36mGET /health?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-05 16:37:45,852 - 127.0.0.1 - - [05/Dec/2024 16:37:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-05 16:37:48,335 - 127.0.0.1 - - [05/Dec/2024 16:37:48] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-05 16:37:48,345 - 127.0.0.1 - - [05/Dec/2024 16:37:48] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-05 16:37:48,347 - 127.0.0.1 - - [05/Dec/2024 16:37:48] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-05 16:37:48,351 - 127.0.0.1 - - [05/Dec/2024 16:37:48] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-05 16:37:48,357 - 127.0.0.1 - - [05/Dec/2024 16:37:48] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-05 16:37:49,836 - 127.0.0.1 - - [05/Dec/2024 16:37:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-05 16:37:49,850 - 127.0.0.1 - - [05/Dec/2024 16:37:49] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-05 16:37:49,850 - 127.0.0.1 - - [05/Dec/2024 16:37:49] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-05 16:37:49,854 - 127.0.0.1 - - [05/Dec/2024 16:37:49] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-05 16:37:49,859 - 127.0.0.1 - - [05/Dec/2024 16:37:49] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-05 16:41:15,868 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.55.16:5001
+2024-12-05 16:41:15,868 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:41:15,869 -  * Restarting with stat
+2024-12-05 16:41:16,208 -  * Debugger is active!
+2024-12-05 16:41:16,215 -  * Debugger PIN: 527-388-488
+2024-12-05 16:41:21,302 - 127.0.0.1 - - [05/Dec/2024 16:41:21] "GET / HTTP/1.1" 200 -
+2024-12-05 16:41:24,127 - 127.0.0.1 - - [05/Dec/2024 16:41:24] "GET /health HTTP/1.1" 200 -
+2024-12-05 16:43:18,453 - 127.0.0.1 - - [05/Dec/2024 16:43:18] "[32mGET /apidocs HTTP/1.1[0m" 308 -
+2024-12-05 16:43:18,474 - 127.0.0.1 - - [05/Dec/2024 16:43:18] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-05 16:43:18,481 - 127.0.0.1 - - [05/Dec/2024 16:43:18] "[33mGET /static/swagger-ui.css HTTP/1.1[0m" 404 -
+2024-12-05 16:43:18,482 - 127.0.0.1 - - [05/Dec/2024 16:43:18] "[33mGET /static/swagger-ui-bundle.js HTTP/1.1[0m" 404 -
+2024-12-05 16:43:18,483 - 127.0.0.1 - - [05/Dec/2024 16:43:18] "[33mGET /static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 404 -
+2024-12-05 16:43:18,483 - 127.0.0.1 - - [05/Dec/2024 16:43:18] "[33mGET /static/lib/jquery.min.js HTTP/1.1[0m" 404 -
+2024-12-05 16:43:18,695 - 127.0.0.1 - - [05/Dec/2024 16:43:18] "[33mGET /static/favicon-32x32.png HTTP/1.1[0m" 404 -
+2024-12-05 16:43:42,999 - 127.0.0.1 - - [05/Dec/2024 16:43:42] "GET /apispec.json HTTP/1.1" 200 -
+2024-12-05 16:44:00,483 - 127.0.0.1 - - [05/Dec/2024 16:44:00] "[33mGET /apispec HTTP/1.1[0m" 404 -
+2024-12-05 16:44:03,618 - 127.0.0.1 - - [05/Dec/2024 16:44:03] "[33mGET /apispec/ HTTP/1.1[0m" 404 -
+2024-12-05 16:48:22,105 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/main.py', reloading
+2024-12-05 16:48:22,808 -  * Restarting with stat
+2024-12-05 16:48:23,559 -  * Debugger is active!
+2024-12-05 16:48:23,566 -  * Debugger PIN: 527-388-488
+2024-12-05 16:49:05,081 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.55.16:5001
+2024-12-05 16:49:05,082 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:49:05,082 -  * Restarting with stat
+2024-12-05 16:49:05,426 -  * Debugger is active!
+2024-12-05 16:49:05,431 -  * Debugger PIN: 527-388-488
+2024-12-05 16:52:37,785 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.43.14:5001
+2024-12-05 16:52:37,785 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:52:37,785 -  * Restarting with stat
+2024-12-05 16:52:38,127 -  * Debugger is active!
+2024-12-05 16:52:38,135 -  * Debugger PIN: 527-388-488
+2024-12-05 16:52:43,943 - 127.0.0.1 - - [05/Dec/2024 16:52:43] "[33mGET /apispec/ HTTP/1.1[0m" 404 -
+2024-12-05 16:52:45,264 - 127.0.0.1 - - [05/Dec/2024 16:52:45] "[33mGET /apispec/ HTTP/1.1[0m" 404 -
+2024-12-05 16:52:45,695 - 127.0.0.1 - - [05/Dec/2024 16:52:45] "[33mGET /apispec/ HTTP/1.1[0m" 404 -
+2024-12-05 16:52:50,905 - 127.0.0.1 - - [05/Dec/2024 16:52:50] "GET / HTTP/1.1" 200 -
+2024-12-05 16:52:54,174 - 127.0.0.1 - - [05/Dec/2024 16:52:54] "GET /health HTTP/1.1" 200 -
+2024-12-05 16:52:56,328 - 127.0.0.1 - - [05/Dec/2024 16:52:56] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-05 16:52:56,344 - 127.0.0.1 - - [05/Dec/2024 16:52:56] "[33mGET /static/swagger-ui-bundle.js HTTP/1.1[0m" 404 -
+2024-12-05 16:52:56,345 - 127.0.0.1 - - [05/Dec/2024 16:52:56] "[33mGET /static/swagger-ui.css HTTP/1.1[0m" 404 -
+2024-12-05 16:52:56,346 - 127.0.0.1 - - [05/Dec/2024 16:52:56] "[33mGET /static/lib/jquery.min.js HTTP/1.1[0m" 404 -
+2024-12-05 16:52:56,346 - 127.0.0.1 - - [05/Dec/2024 16:52:56] "[33mGET /static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 404 -
+2024-12-05 16:53:49,309 - 127.0.0.1 - - [05/Dec/2024 16:53:49] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-05 16:53:49,319 - 127.0.0.1 - - [05/Dec/2024 16:53:49] "[33mGET /static/swagger-ui.css HTTP/1.1[0m" 404 -
+2024-12-05 16:53:49,320 - 127.0.0.1 - - [05/Dec/2024 16:53:49] "[33mGET /static/swagger-ui-bundle.js HTTP/1.1[0m" 404 -
+2024-12-05 16:53:49,323 - 127.0.0.1 - - [05/Dec/2024 16:53:49] "[33mGET /static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 404 -
+2024-12-05 16:53:49,323 - 127.0.0.1 - - [05/Dec/2024 16:53:49] "[33mGET /static/lib/jquery.min.js HTTP/1.1[0m" 404 -
+2024-12-05 16:54:48,047 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.43.14:5001
+2024-12-05 16:54:48,047 - [33mPress CTRL+C to quit[0m
+2024-12-05 16:54:48,047 -  * Restarting with stat
+2024-12-05 16:54:48,401 -  * Debugger is active!
+2024-12-05 16:54:48,408 -  * Debugger PIN: 527-388-488
+2024-12-05 16:54:56,227 - 127.0.0.1 - - [05/Dec/2024 16:54:56] "GET / HTTP/1.1" 200 -
+2024-12-05 16:54:59,080 - 127.0.0.1 - - [05/Dec/2024 16:54:59] "GET /health HTTP/1.1" 200 -
+2024-12-05 16:55:06,960 - 127.0.0.1 - - [05/Dec/2024 16:55:06] "[33mGET /job HTTP/1.1[0m" 404 -
+2024-12-05 17:17:46,321 - 127.0.0.1 - - [05/Dec/2024 17:17:46] "[33mGET /jobS HTTP/1.1[0m" 404 -
+2024-12-05 17:17:49,206 - 127.0.0.1 - - [05/Dec/2024 17:17:49] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-12-05 17:17:49,232 - 127.0.0.1 - - [05/Dec/2024 17:17:49] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-05 18:10:11,947 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.43.14:5001
+2024-12-05 18:10:11,947 - [33mPress CTRL+C to quit[0m
+2024-12-05 18:10:11,948 -  * Restarting with stat
+2024-12-05 18:10:12,325 -  * Debugger is active!
+2024-12-05 18:10:12,332 -  * Debugger PIN: 527-388-488
+2024-12-05 18:10:15,253 - 127.0.0.1 - - [05/Dec/2024 18:10:15] "GET / HTTP/1.1" 200 -
+2024-12-05 18:10:21,280 - 127.0.0.1 - - [05/Dec/2024 18:10:21] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-05 18:10:21,290 - 127.0.0.1 - - [05/Dec/2024 18:10:21] "[33mGET /static/swagger-ui.css HTTP/1.1[0m" 404 -
+2024-12-05 18:10:21,291 - 127.0.0.1 - - [05/Dec/2024 18:10:21] "[33mGET /static/swagger-ui-bundle.js HTTP/1.1[0m" 404 -
+2024-12-05 18:10:21,292 - 127.0.0.1 - - [05/Dec/2024 18:10:21] "[33mGET /static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 404 -
+2024-12-05 18:10:21,292 - 127.0.0.1 - - [05/Dec/2024 18:10:21] "[33mGET /static/lib/jquery.min.js HTTP/1.1[0m" 404 -
+2024-12-05 18:16:39,454 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.55.43.14:5001
+2024-12-05 18:16:39,454 - [33mPress CTRL+C to quit[0m
+2024-12-05 18:16:39,455 -  * Restarting with stat
+2024-12-05 18:16:39,798 -  * Debugger is active!
+2024-12-05 18:16:39,805 -  * Debugger PIN: 527-388-488
+2024-12-05 18:16:43,576 - 127.0.0.1 - - [05/Dec/2024 18:16:43] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+2024-12-05 18:17:02,690 - 127.0.0.1 - - [05/Dec/2024 18:17:02] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+2024-12-05 18:17:09,430 - 127.0.0.1 - - [05/Dec/2024 18:17:09] "[32mGET /jobs?location=서울%20금천구 HTTP/1.1[0m" 308 -
+2024-12-05 18:17:09,438 - 127.0.0.1 - - [05/Dec/2024 18:17:09] "GET /jobs/?location=서울%20금천구 HTTP/1.1" 200 -
+2024-12-05 18:17:12,040 - 127.0.0.1 - - [05/Dec/2024 18:17:12] "[32mGET /jobs?location HTTP/1.1[0m" 308 -
+2024-12-05 18:17:12,044 - 127.0.0.1 - - [05/Dec/2024 18:17:12] "GET /jobs/?location HTTP/1.1" 200 -
+2024-12-05 18:17:14,798 - 127.0.0.1 - - [05/Dec/2024 18:17:14] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-12-05 18:17:14,818 - 127.0.0.1 - - [05/Dec/2024 18:17:14] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-05 19:59:23,576 - 127.0.0.1 - - [05/Dec/2024 19:59:23] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-05 19:59:23,591 - 127.0.0.1 - - [05/Dec/2024 19:59:23] "[33mGET /static/swagger-ui.css HTTP/1.1[0m" 404 -
+2024-12-05 19:59:23,592 - 127.0.0.1 - - [05/Dec/2024 19:59:23] "[33mGET /static/swagger-ui-bundle.js HTTP/1.1[0m" 404 -
+2024-12-05 19:59:23,593 - 127.0.0.1 - - [05/Dec/2024 19:59:23] "[33mGET /static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 404 -
+2024-12-05 19:59:23,594 - 127.0.0.1 - - [05/Dec/2024 19:59:23] "[33mGET /static/lib/jquery.min.js HTTP/1.1[0m" 404 -
+2024-12-05 19:59:32,191 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.30.1.100:5001
+2024-12-05 19:59:32,191 - [33mPress CTRL+C to quit[0m
+2024-12-05 19:59:32,191 -  * Restarting with stat
+2024-12-05 19:59:32,526 -  * Debugger is active!
+2024-12-05 19:59:32,532 -  * Debugger PIN: 527-388-488
