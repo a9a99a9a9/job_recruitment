@@ -4,7 +4,7 @@ from bson.objectid import ObjectId
 
 class User:
     # MongoDB 연결 및 컬렉션 초기화
-    client = MongoClient("mongodb://localhost:27017/")
+    client = MongoClient("mongodb://localhost:3000/")
     db = client['job_crawler']
     collection = db['users']
 

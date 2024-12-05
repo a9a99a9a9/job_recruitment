@@ -2,7 +2,7 @@ from pymongo import MongoClient, ASCENDING
 from bson.objectid import ObjectId
 
 class Bookmark:
-    collection = MongoClient("mongodb://localhost:27017/")['job_crawler']['bookmarks']
+    collection = MongoClient("mongodb://localhost:3000/")['job_crawler']['bookmarks']
 
     @classmethod
     def add(cls, user_id, job_id):
@@ -17,7 +17,7 @@ class Bookmark:
         return cls.collection.delete_one({"_id": ObjectId(bookmark_id)}).deleted_count
 
 def get_bookmark_collection():
-    client = MongoClient("mongodb://localhost:27017/")
+    client = MongoClient("mongodb://localhost:3000/")
     db = client['job_crawler']
     collection = db['bookmarks']
 

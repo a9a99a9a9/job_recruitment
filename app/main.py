@@ -47,7 +47,7 @@ def create_app():
 
     # 환경 변수 설정
     app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY', 'your_secret_key')
-    app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost:27017/job_crawler')
+    app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost:3000/job_crawler')
 
     # MongoDB 초기화
     mongo.init_app(app)
@@ -129,6 +129,6 @@ if __name__ == '__main__':
 
     try:
         logger.info("Flask 서버 시작 중...")
-        app.run(debug=True, host='0.0.0.0', port=int(os.getenv('FLASK_RUN_PORT', 5001)))
+        app.run(debug=True, host='0.0.0.0', port=int(os.getenv('FLASK_RUN_PORT', 80)))
     except Exception as e:
         logger.error(f"Flask 서버 실행 중 오류 발생: {e}", exc_info=True)

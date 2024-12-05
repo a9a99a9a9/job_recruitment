@@ -11,7 +11,7 @@ def create_app():
 
     # 환경 변수 설정
     app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY', 'your_secret_key')  # 기본 SECRET_KEY
-    app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost:27017/')  # MongoDB URI
+    app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost:3000/')  # MongoDB URI
 
     # 블루프린트 등록
     app.register_blueprint(auth_routes, url_prefix='/auth')  # 회원 관리 API

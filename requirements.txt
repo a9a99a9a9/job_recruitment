@@ -10,7 +10,7 @@ click==8.1.7
 Deprecated==1.2.15
 dnspython==2.7.0
 email_validator==2.2.0
-flasgger @ git+https://github.com/flasgger/flasgger.git@bb1a86b2d71ed0bdd3e8183570a9ce9d1f5abac1
+flasgger @ gw1it+https://github.com/flasgger/flasgger.git@bb1a86b2d71ed0bdd3e8183570a9ce9d1f5abac1
 Flask==2.2.5
 Flask-Cors==5.0.0
 Flask-JWT-Extended==4.4.4

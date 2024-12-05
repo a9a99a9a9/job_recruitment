@@ -2,7 +2,7 @@ from pymongo import MongoClient, ASCENDING
 from bson.objectid import ObjectId
 
 class Application:
-    collection = MongoClient("mongodb://localhost:27017/")['job_crawler']['applications']
+    collection = MongoClient("mongodb://localhost:3000/")['job_crawler']['applications']
 
     @classmethod
     def apply(cls, user_id, job_id):
@@ -17,7 +17,7 @@ class Application:
         return cls.collection.delete_one({"_id": ObjectId(application_id)}).deleted_count
 
 def get_application_collection():
-    client = MongoClient("mongodb://localhost:27017/")
+    client = MongoClient("mongodb://localhost:3000/")
     db = client['job_crawler']
     collection = db['applications']
 

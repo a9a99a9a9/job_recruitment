@@ -3,7 +3,7 @@ from bson.objectid import ObjectId
 import os
 
 class Job:
-    MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
+    MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:3000/")
     collection = MongoClient(MONGO_URI)['job_crawler']['saramin_jobs']
 
     @classmethod
@@ -54,7 +54,7 @@ class Job:
 
 
 def get_job_collection():
-    client = MongoClient("mongodb://localhost:27017/")
+    client = MongoClient("mongodb://localhost:3000/")
     db = client['job_crawler']
     collection = db['saramin_jobs']
 
