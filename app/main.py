@@ -3,16 +3,29 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 from flask_pymongo import PyMongo
 from flasgger import Swagger, swag_from
-from app.routes.auth_routes import auth_routes
-from app.routes.job_routes import job_routes
-from app.routes.application_routes import application_routes
-from app.routes.bookmark_routes import bookmark_routes
-from app.utils.crawler import crawl_saramin, save_to_mongodb
-from apscheduler.schedulers.background import BackgroundScheduler
 import os
 import logging
 import signal
 import sys
+from apscheduler.schedulers.background import BackgroundScheduler
+
+try:
+    from app.routes.auth_routes import auth_routes
+except ImportError:
+    auth_routes = None
+try:
+    from app.routes.job_routes import job_routes
+except ImportError:
+    job_routes = None
+try:
+    from app.routes.application_routes import application_routes
+except ImportError:
+    application_routes = None
+try:
+    from app.routes.bookmark_routes import bookmark_routes
+except ImportError:
+    bookmark_routes = None
+from app.utils.crawler import crawl_saramin, save_to_mongodb
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -32,40 +45,6 @@ def create_app():
     app = Flask(__name__)
     CORS(app)  # CORS 설정 추가
 
-    # Swagger 설정
-    swagger_config = {
-        "swagger": "2.0",
-        "info": {
-            "title": "Job Crawler API",
-            "description": "Job crawler API 문서",
-            "version": "1.0.0",
-            "contact": {
-                "name": "Developer",
-                "email": "developer@example.com",
-            },
-        },
-        "host": "127.0.0.1:5001",  # 호스트와 포트 설정
-        "basePath": "/",
-        "specs": [
-            {
-                "endpoint": "apispec",
-                "route": "/apispec.json",
-                "rule_filter": lambda rule: True,
-                "model_filter": lambda tag: True,
-            }
-        ],
-        "headers": [],  # 오류 방지를 위해 추가
-    }
-    swagger_template = {
-        "swagger": "2.0",
-        "info": {
-            "title": "Job Crawler API",
-            "description": "Job crawler API 문서",
-            "version": "1.0.0",
-        },
-    }
-    Swagger(app, config=swagger_config, template=swagger_template)
-
     # 환경 변수 설정
     app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY', 'your_secret_key')
     app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost:27017/job_crawler')
@@ -73,11 +52,19 @@ def create_app():
     # MongoDB 초기화
     mongo.init_app(app)
 
+    # Swagger 설정 (swagger.yaml 파일 경로 지정)
+    swagger_template_path = os.path.join(os.path.dirname(__file__), "swagger", "swagger.yaml")
+    Swagger(app, template_file=swagger_template_path)
+
     # 블루프린트 등록
-    app.register_blueprint(auth_routes, url_prefix='/auth')
-    app.register_blueprint(job_routes, url_prefix='/jobs')
-    app.register_blueprint(application_routes, url_prefix='/applications')
-    app.register_blueprint(bookmark_routes, url_prefix='/bookmarks')
+    if auth_routes:
+        app.register_blueprint(auth_routes, url_prefix='/auth')
+    if job_routes:
+        app.register_blueprint(job_routes, url_prefix='/jobs')
+    if application_routes:
+        app.register_blueprint(application_routes, url_prefix='/applications')
+    if bookmark_routes:
+        app.register_blueprint(bookmark_routes, url_prefix='/bookmarks')
 
     # 상태 확인용 헬스체크 엔드포인트
     @app.route('/health', methods=['GET'])
@@ -134,17 +121,12 @@ def shutdown_server(_signal, _frame):
     sys.exit(0)
 
 if __name__ == '__main__':
-    # Flask 애플리케이션 생성
     app = create_app()
-
-    # 스케줄러 시작
     job_scheduler = start_scheduler()
 
-    # Graceful shutdown 등록
     signal.signal(signal.SIGINT, shutdown_server)
     signal.signal(signal.SIGTERM, shutdown_server)
 
-    # Flask 서버 실행
     try:
         logger.info("Flask 서버 시작 중...")
         app.run(debug=True, host='0.0.0.0', port=int(os.getenv('FLASK_RUN_PORT', 5001)))
