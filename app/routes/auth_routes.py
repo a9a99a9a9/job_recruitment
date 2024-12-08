@@ -1,7 +1,13 @@
 from flask import Blueprint, request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from app.models.user import User
-from app.utils.jwt_helper import create_access_token
+from app.utils.jwt_helper import (
+    create_access_token,
+    create_refresh_token,
+    decode_access_token,
+    decode_refresh_token,
+    add_to_blacklist
+)
 from app.utils.middlewares import token_required
 
 # 블루프린트 초기화
@@ -14,8 +20,7 @@ def register_user():
     if not data.get('email') or not data.get('password'):
         return jsonify({"error": "이메일과 비밀번호는 필수입니다."}), 400
 
-    # username이 존재하는 경우만 저장
-    username = data.get('username', None)  # username은 선택적 필드로 처리
+    username = data.get('username', None)
     hashed_password = generate_password_hash(data['password'])
 
     new_user = User(email=data['email'], password=hashed_password, username=username)
@@ -30,10 +35,42 @@ def login_user():
     data = request.json
     user = User.find_by_email(data['email'])
     if user and check_password_hash(user['password'], data['password']):
-        token = create_access_token(user_id=str(user['_id']))
-        return jsonify({"message": "로그인 성공", "token": token}), 200
+        access_token = create_access_token(user_id=str(user['_id']))
+        refresh_token = create_refresh_token(user_id=str(user['_id']))
+        return jsonify({
+            "message": "로그인 성공",
+            "access_token": access_token,
+            "refresh_token": refresh_token
+        }), 200
 
     return jsonify({"error": "이메일 또는 비밀번호가 잘못되었습니다."}), 401
+
+
+# 토큰 갱신 (리프레시 토큰 사용)
+@auth_routes.route('/refresh', methods=['POST'])
+def refresh_token():
+    refresh_token = request.json.get('refresh_token')
+    if not refresh_token:
+        return jsonify({"error": "리프레시 토큰이 제공되지 않았습니다."}), 400
+
+    user_id = decode_refresh_token(refresh_token)
+    if not user_id:
+        return jsonify({"error": "유효하지 않은 리프레시 토큰입니다."}), 401
+
+    new_access_token = create_access_token(user_id=user_id)
+    return jsonify({
+        "message": "토큰 갱신 성공",
+        "access_token": new_access_token
+    }), 200
+
+
+# 로그아웃 (Access Token 블랙리스트 추가)
+@auth_routes.route('/logout', methods=['POST'])
+@token_required
+def logout_user():
+    token = request.headers.get('Authorization').split(" ")[1]
+    add_to_blacklist(token)
+    return jsonify({"message": "로그아웃 성공"}), 200
 
 
 # 회원 정보 수정
