@@ -1,10 +1,12 @@
 from flask import Blueprint, request, jsonify
 from app.models.application import Application
+from app.utils.middlewares import token_required  # 미들웨어 import
 
 application_routes = Blueprint('applications', __name__)
 
 # 지원하기
 @application_routes.route('/', methods=['POST'])
+@token_required
 def apply_job():
     data = request.json
     if not data.get('user_id') or not data.get('job_id'):
@@ -15,6 +17,7 @@ def apply_job():
 
 # 지원 내역 조회
 @application_routes.route('/', methods=['GET'])
+@token_required
 def get_applications():
     user_id = request.args.get('user_id')
     if not user_id:
@@ -28,6 +31,7 @@ def get_applications():
 
 # 지원 취소
 @application_routes.route('/<application_id>', methods=['DELETE'])
+@token_required
 def cancel_application(application_id):
     if not Application.exists(application_id):
         return jsonify({"error": "해당 지원 내역을 찾을 수 없습니다."}), 404
@@ -37,6 +41,7 @@ def cancel_application(application_id):
 
 # 지원 상태 업데이트 (Custom 추가)
 @application_routes.route('/<application_id>/status', methods=['PATCH'])
+@token_required
 def update_application_status(application_id):
     status = request.json.get('status')
     if not status:

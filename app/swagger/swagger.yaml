@@ -4,7 +4,7 @@ info:
   description: Swagger documentation for Job Recruitment Backend API
   version: 1.0.0
 servers:
-  - url: http://127.0.0.1:80
+  - url: http://localhost:80
     description: Local server
 paths:
   /applications/:

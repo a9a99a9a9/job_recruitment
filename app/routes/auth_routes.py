@@ -1,7 +1,8 @@
 from flask import Blueprint, request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from app.models.user import User
-from app.utils.jwt_helper import create_access_token, decode_access_token
+from app.utils.jwt_helper import create_access_token
+from app.utils.middlewares import token_required
 
 # 블루프린트 초기화
 auth_routes = Blueprint('auth', __name__)
@@ -34,25 +35,19 @@ def login_user():
 
     return jsonify({"error": "이메일 또는 비밀번호가 잘못되었습니다."}), 401
 
+
 # 회원 정보 수정
 @auth_routes.route('/profile', methods=['PUT'])
+@token_required
 def update_profile():
-    token = request.headers.get('Authorization')
-    user_id = decode_access_token(token)
-    if not user_id:
-        return jsonify({"error": "유효하지 않은 토큰입니다."}), 401
-
     data = request.json
-    updated = User.update(user_id, data)
+    updated = User.update(request.user_id, data)
     return jsonify({"message": "회원 정보 수정 성공", "updated": updated}), 200
+
 
 # 회원 탈퇴
 @auth_routes.route('/delete', methods=['DELETE'])
+@token_required
 def delete_user():
-    token = request.headers.get('Authorization')
-    user_id = decode_access_token(token)
-    if not user_id:
-        return jsonify({"error": "유효하지 않은 토큰입니다."}), 401
-
-    User.delete(user_id)
+    User.delete(request.user_id)
     return jsonify({"message": "회원 탈퇴 성공"}), 200

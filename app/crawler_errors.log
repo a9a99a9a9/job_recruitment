@@ -2654,3 +2654,102 @@
 2024-12-06 03:19:02,911 - 127.0.0.1 - - [06/Dec/2024 03:19:02] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
 2024-12-06 03:19:02,972 - 127.0.0.1 - - [06/Dec/2024 03:19:02] "GET /apispec_1.json HTTP/1.1" 200 -
 2024-12-06 03:19:02,978 - 127.0.0.1 - - [06/Dec/2024 03:19:02] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2024-12-06 03:22:33,523 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.103:80
+2024-12-06 03:22:33,523 - [33mPress CTRL+C to quit[0m
+2024-12-06 03:22:33,523 -  * Restarting with stat
+2024-12-06 03:22:33,937 -  * Debugger is active!
+2024-12-06 03:22:33,945 -  * Debugger PIN: 527-388-488
+2024-12-06 03:22:37,527 - 127.0.0.1 - - [06/Dec/2024 03:22:37] "GET / HTTP/1.1" 200 -
+2024-12-06 03:22:38,401 - 127.0.0.1 - - [06/Dec/2024 03:22:38] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-06 03:22:38,413 - 127.0.0.1 - - [06/Dec/2024 03:22:38] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-06 03:22:38,418 - 127.0.0.1 - - [06/Dec/2024 03:22:38] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-06 03:22:38,419 - 127.0.0.1 - - [06/Dec/2024 03:22:38] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-06 03:22:38,420 - 127.0.0.1 - - [06/Dec/2024 03:22:38] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-06 03:22:38,455 - 127.0.0.1 - - [06/Dec/2024 03:22:38] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-06 03:49:41,451 - 127.0.0.1 - - [06/Dec/2024 03:49:41] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-06 03:49:41,469 - 127.0.0.1 - - [06/Dec/2024 03:49:41] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-06 03:49:41,470 - 127.0.0.1 - - [06/Dec/2024 03:49:41] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-06 03:49:41,471 - 127.0.0.1 - - [06/Dec/2024 03:49:41] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-06 03:49:41,471 - 127.0.0.1 - - [06/Dec/2024 03:49:41] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-06 03:49:41,542 - 127.0.0.1 - - [06/Dec/2024 03:49:41] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-06 03:49:41,585 - 127.0.0.1 - - [06/Dec/2024 03:49:41] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-06 03:50:25,335 - 127.0.0.1 - - [06/Dec/2024 03:50:25] "GET /applications/?user_id=123123 HTTP/1.1" 200 -
+2024-12-06 03:50:28,527 - 127.0.0.1 - - [06/Dec/2024 03:50:28] "GET /applications/?user_id=123123 HTTP/1.1" 200 -
+2024-12-06 04:57:42,608 - 127.0.0.1 - - [06/Dec/2024 04:57:42] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-06 04:57:42,641 - 127.0.0.1 - - [06/Dec/2024 04:57:42] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-06 04:57:42,650 - 127.0.0.1 - - [06/Dec/2024 04:57:42] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-06 04:57:42,652 - 127.0.0.1 - - [06/Dec/2024 04:57:42] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-06 04:57:42,654 - 127.0.0.1 - - [06/Dec/2024 04:57:42] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-06 04:57:42,736 - 127.0.0.1 - - [06/Dec/2024 04:57:42] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-06 04:57:42,743 - 127.0.0.1 - - [06/Dec/2024 04:57:42] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-06 04:57:43,488 - 127.0.0.1 - - [06/Dec/2024 04:57:43] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-06 04:57:43,498 - 127.0.0.1 - - [06/Dec/2024 04:57:43] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-06 04:57:43,499 - 127.0.0.1 - - [06/Dec/2024 04:57:43] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-06 04:57:43,500 - 127.0.0.1 - - [06/Dec/2024 04:57:43] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-06 04:57:43,500 - 127.0.0.1 - - [06/Dec/2024 04:57:43] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-06 04:57:43,535 - 127.0.0.1 - - [06/Dec/2024 04:57:43] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-06 04:57:43,536 - 127.0.0.1 - - [06/Dec/2024 04:57:43] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-06 05:23:59,729 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.103:80
+2024-12-06 05:23:59,730 - [33mPress CTRL+C to quit[0m
+2024-12-06 05:23:59,731 -  * Restarting with stat
+2024-12-06 05:24:00,095 -  * Debugger is active!
+2024-12-06 05:24:00,108 -  * Debugger PIN: 527-388-488
+2024-12-06 05:36:13,922 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.103:80
+2024-12-06 05:36:13,922 - [33mPress CTRL+C to quit[0m
+2024-12-06 05:36:13,923 -  * Restarting with stat
+2024-12-06 05:36:14,284 -  * Debugger is active!
+2024-12-06 05:36:14,291 -  * Debugger PIN: 527-388-488
+2024-12-06 13:50:21,164 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.41.227:80
+2024-12-06 13:50:21,164 - [33mPress CTRL+C to quit[0m
+2024-12-06 13:50:21,164 -  * Restarting with stat
+2024-12-06 13:50:21,574 -  * Debugger is active!
+2024-12-06 13:50:21,582 -  * Debugger PIN: 527-388-488
+2024-12-06 13:50:56,895 - 127.0.0.1 - - [06/Dec/2024 13:50:56] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-06 13:50:56,918 - 127.0.0.1 - - [06/Dec/2024 13:50:56] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-06 13:50:56,918 - 127.0.0.1 - - [06/Dec/2024 13:50:56] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-06 13:50:56,919 - 127.0.0.1 - - [06/Dec/2024 13:50:56] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-06 13:50:56,919 - 127.0.0.1 - - [06/Dec/2024 13:50:56] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-06 13:50:56,983 - 127.0.0.1 - - [06/Dec/2024 13:50:56] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-08 11:25:43,346 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.0.0.2:80
+2024-12-08 11:25:43,347 - [33mPress CTRL+C to quit[0m
+2024-12-08 11:25:43,347 -  * Restarting with stat
+2024-12-08 11:25:43,725 -  * Debugger is active!
+2024-12-08 11:25:43,731 -  * Debugger PIN: 527-388-488
+2024-12-08 11:25:54,774 - 127.0.0.1 - - [08/Dec/2024 11:25:54] "GET / HTTP/1.1" 200 -
+2024-12-08 11:25:57,541 - 127.0.0.1 - - [08/Dec/2024 11:25:57] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-08 11:25:57,555 - 127.0.0.1 - - [08/Dec/2024 11:25:57] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-08 11:25:57,555 - 127.0.0.1 - - [08/Dec/2024 11:25:57] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-08 11:25:57,557 - 127.0.0.1 - - [08/Dec/2024 11:25:57] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-08 11:25:57,558 - 127.0.0.1 - - [08/Dec/2024 11:25:57] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-08 11:25:57,615 - 127.0.0.1 - - [08/Dec/2024 11:25:57] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-08 11:27:01,191 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/utils/db_helper.py', reloading
+2024-12-08 11:27:01,758 -  * Restarting with stat
+2024-12-08 11:27:02,276 -  * Debugger is active!
+2024-12-08 11:27:02,281 -  * Debugger PIN: 527-388-488
+2024-12-08 11:27:47,085 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/utils/db_helper.py', reloading
+2024-12-08 11:27:47,655 -  * Restarting with stat
+2024-12-08 11:27:48,177 -  * Debugger is active!
+2024-12-08 11:27:48,183 -  * Debugger PIN: 527-388-488
+2024-12-08 11:28:11,691 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/utils/db_helper.py', reloading
+2024-12-08 11:28:11,843 -  * Restarting with stat
+2024-12-08 11:28:12,687 -  * Debugger is active!
+2024-12-08 11:28:12,692 -  * Debugger PIN: 527-388-488
+2024-12-08 11:29:39,437 -  * Detected change in '/Users/PC/Desktop/webstr_3.2/project-root/app/utils/db_helper.py', reloading
+2024-12-08 11:29:39,759 -  * Restarting with stat
+2024-12-08 11:29:40,262 -  * Debugger is active!
+2024-12-08 11:29:40,267 -  * Debugger PIN: 527-388-488
