@@ -13,11 +13,20 @@ def toggle_bookmark():
     job_id = data.get("job_id")
 
     if not job_id:
-        return jsonify({"error": "job_id는 필수입니다."}), 400
+        return jsonify({
+            "status": "error",
+            "message": "job_id는 필수입니다.",
+            "code": "INVALID_REQUEST"
+        }), 400
 
     result = Bookmark.toggle(user_id, job_id)
-    message = "북마크 추가 성공" if result == "added" else "북마크 삭제 성공"
-    return jsonify({"message": message}), 200
+    message = "북마크가 성공적으로 추가되었습니다." if result == "added" else "북마크가 성공적으로 제거되었습니다."
+    return jsonify({
+        "status": "success",
+        "data": {
+            "message": message
+        }
+    }), 200
 
 # 북마크 조회
 @bookmark_routes.route('/', methods=['GET'])
@@ -32,12 +41,13 @@ def get_bookmarks():
     total_bookmarks = Bookmark.count(user_id)
 
     response = {
+        "status": "success",
         "data": bookmarks,
         "pagination": {
             "currentPage": page,
             "totalPages": (total_bookmarks + limit - 1) // limit,
             "totalItems": total_bookmarks,
-            "itemsPerPage": limit,
-        },
+            "itemsPerPage": limit
+        }
     }
     return jsonify(response), 200

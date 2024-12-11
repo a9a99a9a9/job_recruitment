@@ -14,13 +14,27 @@ def apply_job():
     resume = data.get("resume")  # 선택적 필드
 
     if not job_id:
-        return jsonify({"error": "job_id는 필수입니다."}), 400
+        return jsonify({
+            "status": "error",
+            "message": "job_id는 필수입니다.",
+            "code": "MISSING_JOB_ID"
+        }), 400
 
     try:
         application_id = Application.apply(user_id, job_id, resume)
-        return jsonify({"message": "지원 성공", "application_id": str(application_id)}), 201
+        return jsonify({
+            "status": "success",
+            "data": {
+                "message": "지원이 성공적으로 완료되었습니다.",
+                "application_id": str(application_id)
+            }
+        }), 201
     except ValueError as e:
-        return jsonify({"error": str(e)}), 400
+        return jsonify({
+            "status": "error",
+            "message": str(e),
+            "code": "INVALID_APPLICATION"
+        }), 400
 
 # 지원 내역 조회
 @application_routes.route('/', methods=['GET'])
@@ -36,7 +50,16 @@ def get_applications():
         filters["status"] = status
 
     applications = Application.find_by_user(user_id, filters, sort_by, order)
-    return jsonify({"data": applications}), 200
+    return jsonify({
+        "status": "success",
+        "data": applications,
+        "pagination": {
+            "currentPage": 1,
+            "totalPages": 10,
+            "totalItems": 100,
+            "itemsPerPage": 20
+        }
+    }), 200
 
 # 지원 취소
 @application_routes.route('/<application_id>', methods=['DELETE'])
@@ -44,9 +67,18 @@ def get_applications():
 def cancel_application(application_id):
     try:
         Application.cancel(application_id)
-        return jsonify({"message": "지원 취소 성공"}), 200
+        return jsonify({
+            "status": "success",
+            "data": {
+                "message": "지원이 성공적으로 취소되었습니다."
+            }
+        }), 200
     except ValueError as e:
-        return jsonify({"error": str(e)}), 400
+        return jsonify({
+            "status": "error",
+            "message": str(e),
+            "code": "INVALID_APPLICATION_ID"
+        }), 400
 
 # 지원 상태 업데이트
 @application_routes.route('/<application_id>/status', methods=['PATCH'])
@@ -54,10 +86,23 @@ def cancel_application(application_id):
 def update_application_status(application_id):
     status = request.json.get("status")
     if not status:
-        return jsonify({"error": "상태는 필수입니다."}), 400
+        return jsonify({
+            "status": "error",
+            "message": "상태는 필수입니다.",
+            "code": "MISSING_STATUS"
+        }), 400
 
     updated = Application.update_status(application_id, status)
     if updated == 0:
-        return jsonify({"error": "해당 지원 내역을 찾을 수 없습니다."}), 404
+        return jsonify({
+            "status": "error",
+            "message": "해당 지원 내역을 찾을 수 없습니다.",
+            "code": "APPLICATION_NOT_FOUND"
+        }), 404
 
-    return jsonify({"message": "지원 상태 업데이트 성공"}), 200
+    return jsonify({
+        "status": "success",
+        "data": {
+            "message": "지원 상태 업데이트 성공"
+        }
+    }), 200

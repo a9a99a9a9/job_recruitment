@@ -3023,3 +3023,35 @@
 2024-12-11 15:11:34,251 - 127.0.0.1 - - [11/Dec/2024 15:11:34] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
 2024-12-11 15:11:34,323 - 127.0.0.1 - - [11/Dec/2024 15:11:34] "GET /apispec_1.json HTTP/1.1" 200 -
 2024-12-11 15:11:34,324 - 127.0.0.1 - - [11/Dec/2024 15:11:34] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-11 15:21:33,905 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.90.50:80
+2024-12-11 15:21:33,905 - [33mPress CTRL+C to quit[0m
+2024-12-11 15:21:33,906 -  * Restarting with stat
+2024-12-11 15:21:34,273 -  * Debugger is active!
+2024-12-11 15:21:34,280 -  * Debugger PIN: 527-388-488
+2024-12-11 15:23:52,378 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.90.50:80
+2024-12-11 15:23:52,378 - [33mPress CTRL+C to quit[0m
+2024-12-11 15:23:52,379 -  * Restarting with stat
+2024-12-11 15:23:52,737 -  * Debugger is active!
+2024-12-11 15:23:52,745 -  * Debugger PIN: 527-388-488
+2024-12-11 15:29:18,705 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.90.50:80
+2024-12-11 15:29:18,705 - [33mPress CTRL+C to quit[0m
+2024-12-11 15:29:18,706 -  * Restarting with stat
+2024-12-11 15:29:19,056 -  * Debugger is active!
+2024-12-11 15:29:19,064 -  * Debugger PIN: 527-388-488
+2024-12-11 15:30:19,807 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.90.50:80
+2024-12-11 15:30:19,807 - [33mPress CTRL+C to quit[0m
+2024-12-11 15:30:19,808 -  * Restarting with stat
+2024-12-11 15:30:20,187 -  * Debugger is active!
+2024-12-11 15:30:20,194 -  * Debugger PIN: 527-388-488

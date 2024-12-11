@@ -15,16 +15,16 @@ auth_routes = Blueprint('auth', __name__)
 
 # 응답 메시지와 상태 코드 상수
 RESPONSES = {
-    "INVALID_EMAIL": {"message": "유효하지 않은 이메일 형식입니다.", "code": 400},
-    "INVALID_PASSWORD": {"message": "비밀번호는 최소 6자 이상이어야 합니다.", "code": 400},
-    "EMAIL_ALREADY_EXISTS": {"message": "중복된 이메일이 존재합니다.", "code": 400},
-    "LOGIN_SUCCESS": {"message": "로그인 성공", "code": 200},
-    "LOGIN_FAILED": {"message": "이메일 또는 비밀번호가 잘못되었습니다.", "code": 401},
-    "TOKEN_REFRESH_SUCCESS": {"message": "토큰 갱신 성공", "code": 200},
-    "PROFILE_UPDATED": {"message": "회원 정보 수정 성공", "code": 200},
-    "NO_CHANGES": {"message": "수정된 내용이 없습니다.", "code": 200},
-    "DELETE_SUCCESS": {"message": "회원 탈퇴 성공", "code": 200},
-    "INVALID_TOKEN": {"message": "유효하지 않은 리프레시 토큰입니다.", "code": 401}
+    "INVALID_EMAIL": {"message": "유효하지 않은 이메일 형식입니다.", "code": "INVALID_EMAIL"},
+    "INVALID_PASSWORD": {"message": "비밀번호는 최소 6자 이상이어야 합니다.", "code": "INVALID_PASSWORD"},
+    "EMAIL_ALREADY_EXISTS": {"message": "중복된 이메일이 존재합니다.", "code": "EMAIL_ALREADY_EXISTS"},
+    "LOGIN_SUCCESS": {"message": "로그인 성공", "code": "LOGIN_SUCCESS"},
+    "LOGIN_FAILED": {"message": "이메일 또는 비밀번호가 잘못되었습니다.", "code": "LOGIN_FAILED"},
+    "TOKEN_REFRESH_SUCCESS": {"message": "토큰 갱신 성공", "code": "TOKEN_REFRESH_SUCCESS"},
+    "PROFILE_UPDATED": {"message": "회원 정보 수정 성공", "code": "PROFILE_UPDATED"},
+    "NO_CHANGES": {"message": "수정된 내용이 없습니다.", "code": "NO_CHANGES"},
+    "DELETE_SUCCESS": {"message": "회원 탈퇴 성공", "code": "DELETE_SUCCESS"},
+    "INVALID_TOKEN": {"message": "유효하지 않은 리프레시 토큰입니다.", "code": "INVALID_TOKEN"}
 }
 
 # 회원 가입
@@ -35,9 +35,17 @@ def register_user():
     password = data.get('password')
 
     if not email or not re.match(r"[^@]+@[^@]+\.[^@]+", email):
-        return jsonify(RESPONSES["INVALID_EMAIL"]), RESPONSES["INVALID_EMAIL"]["code"]
+        return jsonify({
+            "status": "error",
+            "message": RESPONSES["INVALID_EMAIL"]["message"],
+            "code": RESPONSES["INVALID_EMAIL"]["code"]
+        }), 400
     if not password or len(password) < 6:
-        return jsonify(RESPONSES["INVALID_PASSWORD"]), RESPONSES["INVALID_PASSWORD"]["code"]
+        return jsonify({
+            "status": "error",
+            "message": RESPONSES["INVALID_PASSWORD"]["message"],
+            "code": RESPONSES["INVALID_PASSWORD"]["code"]
+        }), 400
 
     username = data.get('username')
     hashed_password = generate_password_hash(password)
@@ -46,9 +54,19 @@ def register_user():
     try:
         user_id = new_user.save()
     except ValueError:
-        return jsonify(RESPONSES["EMAIL_ALREADY_EXISTS"]), RESPONSES["EMAIL_ALREADY_EXISTS"]["code"]
+        return jsonify({
+            "status": "error",
+            "message": RESPONSES["EMAIL_ALREADY_EXISTS"]["message"],
+            "code": RESPONSES["EMAIL_ALREADY_EXISTS"]["code"]
+        }), 400
 
-    return jsonify({"message": "회원 가입 성공", "user_id": str(user_id)}), 201
+    return jsonify({
+        "status": "success",
+        "data": {
+            "message": "회원 가입이 성공적으로 완료되었습니다.",
+            "user_id": str(user_id)
+        }
+    }), 201
 
 # 로그인
 @auth_routes.route('/login', methods=['POST'])
@@ -60,29 +78,47 @@ def login_user():
         refresh_token = create_refresh_token(user_id=str(user['_id']))
         User.log_login(user['_id'], datetime.utcnow())
         return jsonify({
-            "message": RESPONSES["LOGIN_SUCCESS"]["message"],
-            "access_token": access_token,
-            "refresh_token": refresh_token
-        }), RESPONSES["LOGIN_SUCCESS"]["code"]
+            "status": "success",
+            "data": {
+                "message": RESPONSES["LOGIN_SUCCESS"]["message"],
+                "access_token": access_token,
+                "refresh_token": refresh_token
+            }
+        }), 200
 
-    return jsonify(RESPONSES["LOGIN_FAILED"]), RESPONSES["LOGIN_FAILED"]["code"]
+    return jsonify({
+        "status": "error",
+        "message": RESPONSES["LOGIN_FAILED"]["message"],
+        "code": RESPONSES["LOGIN_FAILED"]["code"]
+    }), 401
 
 # 토큰 갱신
 @auth_routes.route('/refresh', methods=['POST'])
 def refresh_token():
     refresh_token = request.json.get('refresh_token')
     if not refresh_token:
-        return jsonify(RESPONSES["INVALID_TOKEN"]), RESPONSES["INVALID_TOKEN"]["code"]
+        return jsonify({
+            "status": "error",
+            "message": RESPONSES["INVALID_TOKEN"]["message"],
+            "code": RESPONSES["INVALID_TOKEN"]["code"]
+        }), 401
 
     user_id = decode_refresh_token(refresh_token)
     if not user_id:
-        return jsonify(RESPONSES["INVALID_TOKEN"]), RESPONSES["INVALID_TOKEN"]["code"]
+        return jsonify({
+            "status": "error",
+            "message": RESPONSES["INVALID_TOKEN"]["message"],
+            "code": RESPONSES["INVALID_TOKEN"]["code"]
+        }), 401
 
     new_access_token = create_access_token(user_id=user_id)
     return jsonify({
-        "message": RESPONSES["TOKEN_REFRESH_SUCCESS"]["message"],
-        "access_token": new_access_token
-    }), RESPONSES["TOKEN_REFRESH_SUCCESS"]["code"]
+        "status": "success",
+        "data": {
+            "message": RESPONSES["TOKEN_REFRESH_SUCCESS"]["message"],
+            "access_token": new_access_token
+        }
+    }), 200
 
 # 로그아웃
 @auth_routes.route('/logout', methods=['POST'])
@@ -90,7 +126,12 @@ def refresh_token():
 def logout_user():
     token = request.headers.get('Authorization').split(" ")[1]
     add_to_blacklist(token)
-    return jsonify({"message": "로그아웃 성공"}), 200
+    return jsonify({
+        "status": "success",
+        "data": {
+            "message": "로그아웃 성공"
+        }
+    }), 200
 
 # 회원 정보 수정
 @auth_routes.route('/profile', methods=['PUT'])
@@ -101,11 +142,34 @@ def update_profile():
         data['password'] = generate_password_hash(data['password'])
 
     updated = User.update(g.user_id, data)
-    return jsonify(RESPONSES["PROFILE_UPDATED" if updated else "NO_CHANGES"]), 200
+    if updated:
+        return jsonify({
+            "status": "success",
+            "data": {
+                "message": RESPONSES["PROFILE_UPDATED"]["message"]
+            }
+        }), 200
+    return jsonify({
+        "status": "success",
+        "data": {
+            "message": RESPONSES["NO_CHANGES"]["message"]
+        }
+    }), 200
 
 # 회원 탈퇴
 @auth_routes.route('/delete', methods=['DELETE'])
 @token_required
 def delete_user():
     deleted = User.delete(g.user_id)
-    return jsonify(RESPONSES["DELETE_SUCCESS" if deleted else "INVALID_TOKEN"]), 200
+    if deleted:
+        return jsonify({
+            "status": "success",
+            "data": {
+                "message": RESPONSES["DELETE_SUCCESS"]["message"]
+            }
+        }), 200
+    return jsonify({
+        "status": "error",
+        "message": "회원 탈퇴 실패",
+        "code": "DELETE_FAILED"
+    }), 400

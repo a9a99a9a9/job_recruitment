@@ -28,6 +28,7 @@ def get_jobs():
     total_jobs = Job.count(filters)
 
     response = {
+        "status": "success",
         "data": jobs,
         "pagination": {
             "currentPage": page,
@@ -43,12 +44,17 @@ def get_jobs():
 def get_job_detail(job_id):
     job = Job.find_by_id(job_id)
     if not job:
-        return jsonify({"error": "공고를 찾을 수 없습니다."}), 404
+        return jsonify({
+            "status": "error",
+            "message": "채용 공고를 찾을 수 없습니다.",
+            "code": "JOB_NOT_FOUND"
+        }), 404
 
     Job.increment_views(job_id)
     recommended = Job.recommend_jobs(job_id)
 
     return jsonify({
+        "status": "success",
         "data": job,
         "recommended": recommended,
     }), 200
@@ -58,7 +64,14 @@ def get_job_detail(job_id):
 def search_jobs():
     query = request.args.get('query', '').strip()
     if not query:
-        return jsonify({"error": "검색어를 입력하세요."}), 400
+        return jsonify({
+            "status": "error",
+            "message": "검색어가 제공되지 않았습니다.",
+            "code": "MISSING_QUERY"
+        }), 400
 
     jobs = Job.search(query)
-    return jsonify({"data": jobs}), 200
+    return jsonify({
+        "status": "success",
+        "data": jobs
+    }), 200
