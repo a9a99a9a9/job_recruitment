@@ -4,38 +4,40 @@ from app.utils.middlewares import token_required
 
 bookmark_routes = Blueprint('bookmarks', __name__)
 
-# 북마크 추가
+# 북마크 추가/제거 (토글)
 @bookmark_routes.route('/', methods=['POST'])
 @token_required
-def add_bookmark():
-    user_id = g.user_id  # 미들웨어에서 저장된 user_id 사용
+def toggle_bookmark():
+    user_id = g.user_id  # 인증된 사용자 ID
     data = request.json
-    data['user_id'] = user_id  # 요청 데이터에 user_id 추가
-    bookmark_id = Bookmark.add(data)
-    return jsonify({"message": "북마크 추가 성공", "bookmark_id": str(bookmark_id)}), 201
+    job_id = data.get("job_id")
+
+    if not job_id:
+        return jsonify({"error": "job_id는 필수입니다."}), 400
+
+    result = Bookmark.toggle(user_id, job_id)
+    message = "북마크 추가 성공" if result == "added" else "북마크 삭제 성공"
+    return jsonify({"message": message}), 200
 
 # 북마크 조회
 @bookmark_routes.route('/', methods=['GET'])
 @token_required
 def get_bookmarks():
-    user_id = g.user_id  # 미들웨어에서 저장된 user_id 사용
-    bookmarks = Bookmark.find_by_user(user_id)
-    return jsonify({"data": bookmarks}), 200
+    user_id = g.user_id  # 인증된 사용자 ID
+    page = int(request.args.get("page", 1))
+    limit = int(request.args.get("limit", 20))
+    skip = (page - 1) * limit
 
-# 북마크 삭제
-@bookmark_routes.route('/<bookmark_id>', methods=['DELETE'])
-@token_required
-def delete_bookmark(bookmark_id):
-    user_id = g.user_id  # 미들웨어에서 저장된 user_id 사용
-    Bookmark.delete(bookmark_id, user_id)  # user_id를 삭제 조건으로 전달
-    return jsonify({"message": "북마크 삭제 성공"}), 200
+    bookmarks = Bookmark.find_by_user(user_id, skip=skip, limit=limit)
+    total_bookmarks = Bookmark.count(user_id)
 
-# 북마크 필터링 (Custom 추가)
-@bookmark_routes.route('/filter', methods=['GET'])
-@token_required
-def filter_bookmarks():
-    user_id = g.user_id  # 미들웨어에서 저장된 user_id 사용
-    filters = request.args
-    filters = {**filters, "user_id": user_id}  # 필터 조건에 user_id 추가
-    bookmarks = Bookmark.filter(filters)
-    return jsonify({"data": bookmarks}), 200
+    response = {
+        "data": bookmarks,
+        "pagination": {
+            "currentPage": page,
+            "totalPages": (total_bookmarks + limit - 1) // limit,
+            "totalItems": total_bookmarks,
+            "itemsPerPage": limit,
+        },
+    }
+    return jsonify(response), 200
