@@ -1,15 +1,15 @@
-from flask import request, jsonify
+from flask import request, jsonify, g
 import jwt
 import os
 import logging
+from functools import wraps
 
 # 로깅 설정
 logger = logging.getLogger(__name__)
 
-
 def token_required(f):
     """JWT 토큰 검증 미들웨어"""
-
+    @wraps(f)
     def decorated(*args, **kwargs):
         token = None
 
@@ -32,9 +32,9 @@ def token_required(f):
                 os.getenv('FLASK_SECRET_KEY', 'your_secret_key'),
                 algorithms=["HS256"]
             )
-            # 추출된 사용자 ID를 요청 객체에 저장
-            request.user_id = decoded_token.get('user_id')
-            if not request.user_id:
+            # 추출된 사용자 ID를 플라스크 글로벌 객체에 저장
+            g.user_id = decoded_token.get('user_id')
+            if not g.user_id:
                 logger.warning("토큰에 user_id가 포함되지 않음")
                 return jsonify({"error": "유효하지 않은 토큰입니다."}), 401
         except jwt.ExpiredSignatureError:

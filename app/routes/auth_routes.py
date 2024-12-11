@@ -1,16 +1,14 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, g
 from werkzeug.security import generate_password_hash, check_password_hash
 from app.models.user import User
 from app.utils.jwt_helper import (
     create_access_token,
     create_refresh_token,
-    decode_access_token,
     decode_refresh_token,
     add_to_blacklist
 )
-from app.utils.middlewares import token_required
+from app.utils.middlewares import token_required  # 수정된 데코레이터 사용
 
-# 블루프린트 초기화
 auth_routes = Blueprint('auth', __name__)
 
 # 회원 가입
@@ -24,7 +22,11 @@ def register_user():
     hashed_password = generate_password_hash(data['password'])
 
     new_user = User(email=data['email'], password=hashed_password, username=username)
-    user_id = new_user.save()
+
+    try:
+        user_id = new_user.save()
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
 
     return jsonify({"message": "회원 가입 성공", "user_id": str(user_id)}), 201
 
@@ -46,7 +48,7 @@ def login_user():
     return jsonify({"error": "이메일 또는 비밀번호가 잘못되었습니다."}), 401
 
 
-# 토큰 갱신 (리프레시 토큰 사용)
+# 토큰 갱신
 @auth_routes.route('/refresh', methods=['POST'])
 def refresh_token():
     refresh_token = request.json.get('refresh_token')
@@ -64,7 +66,7 @@ def refresh_token():
     }), 200
 
 
-# 로그아웃 (Access Token 블랙리스트 추가)
+# 로그아웃
 @auth_routes.route('/logout', methods=['POST'])
 @token_required
 def logout_user():
@@ -78,13 +80,17 @@ def logout_user():
 @token_required
 def update_profile():
     data = request.json
-    updated = User.update(request.user_id, data)
-    return jsonify({"message": "회원 정보 수정 성공", "updated": updated}), 200
+    updated = User.update(g.user_id, data)
+    if updated == 0:
+        return jsonify({"message": "수정된 내용이 없습니다."}), 200
+    return jsonify({"message": "회원 정보 수정 성공"}), 200
 
 
 # 회원 탈퇴
 @auth_routes.route('/delete', methods=['DELETE'])
 @token_required
 def delete_user():
-    User.delete(request.user_id)
+    deleted = User.delete(g.user_id)
+    if deleted == 0:
+        return jsonify({"error": "사용자 삭제 실패"}, 400)
     return jsonify({"message": "회원 탈퇴 성공"}), 200
