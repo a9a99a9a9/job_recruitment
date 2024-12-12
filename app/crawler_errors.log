@@ -3055,3 +3055,242 @@
 2024-12-11 15:30:19,808 -  * Restarting with stat
 2024-12-11 15:30:20,187 -  * Debugger is active!
 2024-12-11 15:30:20,194 -  * Debugger PIN: 527-388-488
+2024-12-11 15:32:58,118 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.90.50:80
+2024-12-11 15:32:58,119 - [33mPress CTRL+C to quit[0m
+2024-12-11 15:32:58,120 -  * Restarting with stat
+2024-12-11 15:32:58,476 -  * Debugger is active!
+2024-12-11 15:32:58,484 -  * Debugger PIN: 527-388-488
+2024-12-11 15:33:01,914 - 127.0.0.1 - - [11/Dec/2024 15:33:01] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-11 15:33:01,936 - 127.0.0.1 - - [11/Dec/2024 15:33:01] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-11 15:33:01,936 - 127.0.0.1 - - [11/Dec/2024 15:33:01] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-11 15:33:01,936 - 127.0.0.1 - - [11/Dec/2024 15:33:01] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-11 15:33:01,937 - 127.0.0.1 - - [11/Dec/2024 15:33:01] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-11 15:33:02,008 - 127.0.0.1 - - [11/Dec/2024 15:33:02] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-11 15:33:02,010 - 127.0.0.1 - - [11/Dec/2024 15:33:02] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-11 15:53:56,538 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.90.50:80
+2024-12-11 15:53:56,539 - [33mPress CTRL+C to quit[0m
+2024-12-11 15:53:56,540 -  * Restarting with stat
+2024-12-11 15:53:56,913 -  * Debugger is active!
+2024-12-11 15:53:56,921 -  * Debugger PIN: 527-388-488
+2024-12-12 15:28:13,183 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.43.78:80
+2024-12-12 15:28:13,183 - [33mPress CTRL+C to quit[0m
+2024-12-12 15:28:13,184 -  * Restarting with stat
+2024-12-12 15:28:13,562 -  * Debugger is active!
+2024-12-12 15:28:13,577 -  * Debugger PIN: 527-388-488
+2024-12-12 15:28:21,187 - 127.0.0.1 - - [12/Dec/2024 15:28:21] "GET / HTTP/1.1" 200 -
+2024-12-12 15:28:22,030 - 127.0.0.1 - - [12/Dec/2024 15:28:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-12 15:28:23,952 - 127.0.0.1 - - [12/Dec/2024 15:28:23] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 15:28:23,976 - 127.0.0.1 - - [12/Dec/2024 15:28:23] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 15:28:23,976 - 127.0.0.1 - - [12/Dec/2024 15:28:23] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 15:28:23,977 - 127.0.0.1 - - [12/Dec/2024 15:28:23] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2024-12-12 15:28:23,977 - 127.0.0.1 - - [12/Dec/2024 15:28:23] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2024-12-12 15:28:24,047 - 127.0.0.1 - - [12/Dec/2024 15:28:24] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 15:28:33,007 - 127.0.0.1 - - [12/Dec/2024 15:28:33] "[32mGET /jobs HTTP/1.1[0m" 308 -
+2024-12-12 15:28:33,041 - 127.0.0.1 - - [12/Dec/2024 15:28:33] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 15:30:31,063 - 127.0.0.1 - - [12/Dec/2024 15:30:31] "[32mGET /jobs?page=2 HTTP/1.1[0m" 308 -
+2024-12-12 15:30:31,070 - 127.0.0.1 - - [12/Dec/2024 15:30:31] "GET /jobs/?page=2 HTTP/1.1" 200 -
+2024-12-12 15:30:50,726 - 127.0.0.1 - - [12/Dec/2024 15:30:50] "[32mGET /jobs?location=서울 HTTP/1.1[0m" 308 -
+2024-12-12 15:30:50,736 - 127.0.0.1 - - [12/Dec/2024 15:30:50] "GET /jobs/?location=서울 HTTP/1.1" 200 -
+2024-12-12 15:30:51,460 - 127.0.0.1 - - [12/Dec/2024 15:30:51] "GET /jobs/?location=서울 HTTP/1.1" 200 -
+2024-12-12 15:30:59,978 - 127.0.0.1 - - [12/Dec/2024 15:30:59] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 15:31:05,829 - 127.0.0.1 - - [12/Dec/2024 15:31:05] "[32mGET /jobs?page=1 HTTP/1.1[0m" 308 -
+2024-12-12 15:31:05,835 - 127.0.0.1 - - [12/Dec/2024 15:31:05] "GET /jobs/?page=1 HTTP/1.1" 200 -
+2024-12-12 15:31:06,515 - 127.0.0.1 - - [12/Dec/2024 15:31:06] "GET /jobs/?page=1 HTTP/1.1" 200 -
+2024-12-12 15:31:07,064 - 127.0.0.1 - - [12/Dec/2024 15:31:07] "GET /jobs/?page=1 HTTP/1.1" 200 -
+2024-12-12 15:31:07,537 - 127.0.0.1 - - [12/Dec/2024 15:31:07] "GET /jobs/?page=1 HTTP/1.1" 200 -
+2024-12-12 15:31:15,828 - 127.0.0.1 - - [12/Dec/2024 15:31:15] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 15:31:29,902 - 127.0.0.1 - - [12/Dec/2024 15:31:29] "GET /jobs/search?query=서울 HTTP/1.1" 200 -
+2024-12-12 15:32:32,576 - 127.0.0.1 - - [12/Dec/2024 15:32:32] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 15:32:32,591 - 127.0.0.1 - - [12/Dec/2024 15:32:32] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 15:32:32,592 - 127.0.0.1 - - [12/Dec/2024 15:32:32] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 15:32:32,593 - 127.0.0.1 - - [12/Dec/2024 15:32:32] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 15:32:32,594 - 127.0.0.1 - - [12/Dec/2024 15:32:32] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 15:32:32,669 - 127.0.0.1 - - [12/Dec/2024 15:32:32] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 15:32:32,671 - 127.0.0.1 - - [12/Dec/2024 15:32:32] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 15:34:23,696 - 127.0.0.1 - - [12/Dec/2024 15:34:23] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 15:45:09,421 - 127.0.0.1 - - [12/Dec/2024 15:45:09] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 15:45:09,436 - 127.0.0.1 - - [12/Dec/2024 15:45:09] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:09,437 - 127.0.0.1 - - [12/Dec/2024 15:45:09] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:09,438 - 127.0.0.1 - - [12/Dec/2024 15:45:09] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 15:45:09,439 - 127.0.0.1 - - [12/Dec/2024 15:45:09] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:09,480 - 127.0.0.1 - - [12/Dec/2024 15:45:09] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 15:45:09,481 - 127.0.0.1 - - [12/Dec/2024 15:45:09] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,122 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 15:45:10,135 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,136 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,136 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,137 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,163 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 15:45:10,164 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,775 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 15:45:10,789 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,789 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,791 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,793 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 15:45:10,816 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 15:45:10,818 - 127.0.0.1 - - [12/Dec/2024 15:45:10] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 15:45:15,359 - 127.0.0.1 - - [12/Dec/2024 15:45:15] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 15:45:16,061 - 127.0.0.1 - - [12/Dec/2024 15:45:16] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 15:45:16,611 - 127.0.0.1 - - [12/Dec/2024 15:45:16] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 16:18:43,158 - 127.0.0.1 - - [12/Dec/2024 16:18:43] "[33mGET /data HTTP/1.1[0m" 404 -
+2024-12-12 16:28:01,478 - 127.0.0.1 - - [12/Dec/2024 16:28:01] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 16:28:02,147 - 127.0.0.1 - - [12/Dec/2024 16:28:02] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 16:29:48,625 - 127.0.0.1 - - [12/Dec/2024 16:29:48] "GET /jobs/?page=2 HTTP/1.1" 200 -
+2024-12-12 16:29:48,775 - 127.0.0.1 - - [12/Dec/2024 16:29:48] "GET /jobs/?page=2 HTTP/1.1" 200 -
+2024-12-12 16:29:48,887 - 127.0.0.1 - - [12/Dec/2024 16:29:48] "GET /jobs/?page=2 HTTP/1.1" 200 -
+2024-12-12 16:29:53,980 - 127.0.0.1 - - [12/Dec/2024 16:29:53] "[32mGET /jobs?page=2&limit=2 HTTP/1.1[0m" 308 -
+2024-12-12 16:29:53,991 - 127.0.0.1 - - [12/Dec/2024 16:29:53] "GET /jobs/?page=2&limit=2 HTTP/1.1" 200 -
+2024-12-12 16:29:54,705 - 127.0.0.1 - - [12/Dec/2024 16:29:54] "GET /jobs/?page=2&limit=2 HTTP/1.1" 200 -
+2024-12-12 16:30:01,005 - 127.0.0.1 - - [12/Dec/2024 16:30:01] "[32mGET /jobs?page=2&limit=2&order=1 HTTP/1.1[0m" 308 -
+2024-12-12 16:30:01,010 - 127.0.0.1 - - [12/Dec/2024 16:30:01] "GET /jobs/?page=2&limit=2&order=1 HTTP/1.1" 200 -
+2024-12-12 16:30:08,762 - 127.0.0.1 - - [12/Dec/2024 16:30:08] "[32mGET /jobs?order=1 HTTP/1.1[0m" 308 -
+2024-12-12 16:30:08,770 - 127.0.0.1 - - [12/Dec/2024 16:30:08] "GET /jobs/?order=1 HTTP/1.1" 200 -
+2024-12-12 17:03:09,135 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.43.78:80
+2024-12-12 17:03:09,135 - [33mPress CTRL+C to quit[0m
+2024-12-12 17:03:09,137 -  * Restarting with stat
+2024-12-12 17:03:09,498 -  * Debugger is active!
+2024-12-12 17:03:09,508 -  * Debugger PIN: 527-388-488
+2024-12-12 17:03:12,800 - 127.0.0.1 - - [12/Dec/2024 17:03:12] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 17:03:12,827 - 127.0.0.1 - - [12/Dec/2024 17:03:12] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 17:03:12,829 - 127.0.0.1 - - [12/Dec/2024 17:03:12] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 17:03:12,830 - 127.0.0.1 - - [12/Dec/2024 17:03:12] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 17:03:12,830 - 127.0.0.1 - - [12/Dec/2024 17:03:12] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 17:03:12,881 - 127.0.0.1 - - [12/Dec/2024 17:03:12] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 17:03:12,882 - 127.0.0.1 - - [12/Dec/2024 17:03:12] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 17:03:13,578 - 127.0.0.1 - - [12/Dec/2024 17:03:13] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 17:03:13,589 - 127.0.0.1 - - [12/Dec/2024 17:03:13] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 17:03:13,590 - 127.0.0.1 - - [12/Dec/2024 17:03:13] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 17:03:13,591 - 127.0.0.1 - - [12/Dec/2024 17:03:13] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 17:03:13,593 - 127.0.0.1 - - [12/Dec/2024 17:03:13] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 17:03:13,618 - 127.0.0.1 - - [12/Dec/2024 17:03:13] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 17:03:13,619 - 127.0.0.1 - - [12/Dec/2024 17:03:13] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 17:03:22,052 - 127.0.0.1 - - [12/Dec/2024 17:03:22] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 17:03:33,356 - 127.0.0.1 - - [12/Dec/2024 17:03:33] "GET /jobs/?page=2 HTTP/1.1" 200 -
+2024-12-12 17:03:47,778 - 127.0.0.1 - - [12/Dec/2024 17:03:47] "[32mGET /jobs?지역=서울 HTTP/1.1[0m" 308 -
+2024-12-12 17:03:47,788 - 127.0.0.1 - - [12/Dec/2024 17:03:47] "GET /jobs/?지역=서울 HTTP/1.1" 200 -
+2024-12-12 17:03:54,122 - 127.0.0.1 - - [12/Dec/2024 17:03:54] "[32mGET /jobs?page=2&지역=서울 HTTP/1.1[0m" 308 -
+2024-12-12 17:03:54,128 - 127.0.0.1 - - [12/Dec/2024 17:03:54] "GET /jobs/?page=2&지역=서울 HTTP/1.1" 200 -
+2024-12-12 17:05:55,378 - 127.0.0.1 - - [12/Dec/2024 17:05:55] "[32mGET /jobs?page=1&limit=10&지역=서울 HTTP/1.1[0m" 308 -
+2024-12-12 17:05:55,384 - 127.0.0.1 - - [12/Dec/2024 17:05:55] "GET /jobs/?page=1&limit=10&지역=서울 HTTP/1.1" 200 -
+2024-12-12 17:11:59,689 - 127.0.0.1 - - [12/Dec/2024 17:11:59] "GET /jobs/?page=1&limit=10&지역=서울 HTTP/1.1" 200 -
+2024-12-12 17:12:00,149 - 127.0.0.1 - - [12/Dec/2024 17:12:00] "GET /jobs/?page=1&limit=10&지역=서울 HTTP/1.1" 200 -
+2024-12-12 17:12:00,334 - 127.0.0.1 - - [12/Dec/2024 17:12:00] "GET /jobs/?page=1&limit=10&지역=서울 HTTP/1.1" 200 -
+2024-12-12 17:13:13,110 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.43.78:80
+2024-12-12 17:13:13,110 - [33mPress CTRL+C to quit[0m
+2024-12-12 17:13:13,111 -  * Restarting with stat
+2024-12-12 17:13:13,493 -  * Debugger is active!
+2024-12-12 17:13:13,502 -  * Debugger PIN: 527-388-488
+2024-12-12 17:13:21,162 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.43.78:80
+2024-12-12 17:13:21,162 - [33mPress CTRL+C to quit[0m
+2024-12-12 17:13:21,164 -  * Restarting with stat
+2024-12-12 17:13:21,538 -  * Debugger is active!
+2024-12-12 17:13:21,546 -  * Debugger PIN: 527-388-488
+2024-12-12 17:14:17,244 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.43.78:80
+2024-12-12 17:14:17,244 - [33mPress CTRL+C to quit[0m
+2024-12-12 17:14:17,245 -  * Restarting with stat
+2024-12-12 17:14:17,610 -  * Debugger is active!
+2024-12-12 17:14:17,617 -  * Debugger PIN: 527-388-488
+2024-12-12 17:14:20,187 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 17:14:20,210 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,211 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,212 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,214 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,250 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 17:14:20,251 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,905 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 17:14:20,918 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,919 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,920 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,920 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 17:14:20,947 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 17:14:20,949 - 127.0.0.1 - - [12/Dec/2024 17:14:20] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 17:14:24,606 - 127.0.0.1 - - [12/Dec/2024 17:14:24] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 17:14:25,781 - 127.0.0.1 - - [12/Dec/2024 17:14:25] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 17:14:31,206 - 127.0.0.1 - - [12/Dec/2024 17:14:31] "GET /jobs/?page=2 HTTP/1.1" 200 -
+2024-12-12 17:17:46,760 - 127.0.0.1 - - [12/Dec/2024 17:17:46] "GET /jobs/?지역=서울 HTTP/1.1" 200 -
+2024-12-12 17:17:55,237 - 127.0.0.1 - - [12/Dec/2024 17:17:55] "[32mGET /jobs?지역=구로구 HTTP/1.1[0m" 308 -
+2024-12-12 17:17:55,248 - 127.0.0.1 - - [12/Dec/2024 17:17:55] "GET /jobs/?지역=구로구 HTTP/1.1" 200 -
+2024-12-12 17:23:59,110 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.43.78:80
+2024-12-12 17:23:59,110 - [33mPress CTRL+C to quit[0m
+2024-12-12 17:23:59,111 -  * Restarting with stat
+2024-12-12 17:23:59,474 -  * Debugger is active!
+2024-12-12 17:23:59,484 -  * Debugger PIN: 527-388-488
+2024-12-12 17:24:05,830 - 127.0.0.1 - - [12/Dec/2024 17:24:05] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 17:24:05,850 - 127.0.0.1 - - [12/Dec/2024 17:24:05] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 17:24:05,851 - 127.0.0.1 - - [12/Dec/2024 17:24:05] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 17:24:05,854 - 127.0.0.1 - - [12/Dec/2024 17:24:05] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 17:24:05,855 - 127.0.0.1 - - [12/Dec/2024 17:24:05] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 17:24:05,894 - 127.0.0.1 - - [12/Dec/2024 17:24:05] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 17:24:05,895 - 127.0.0.1 - - [12/Dec/2024 17:24:05] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 17:24:10,847 - 127.0.0.1 - - [12/Dec/2024 17:24:10] "[32mGET /jobs?page=1&limit=20&order=-1 HTTP/1.1[0m" 308 -
+2024-12-12 17:24:10,869 - 127.0.0.1 - - [12/Dec/2024 17:24:10] "GET /jobs/?page=1&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-12 17:24:18,315 - 127.0.0.1 - - [12/Dec/2024 17:24:18] "[32mGET /jobs?page=2&limit=20&order=-1 HTTP/1.1[0m" 308 -
+2024-12-12 17:24:18,325 - 127.0.0.1 - - [12/Dec/2024 17:24:18] "GET /jobs/?page=2&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-12 17:24:31,718 - 127.0.0.1 - - [12/Dec/2024 17:24:31] "[32mGET /jobs?page=1&limit=20&order=1 HTTP/1.1[0m" 308 -
+2024-12-12 17:24:31,782 - 127.0.0.1 - - [12/Dec/2024 17:24:31] "GET /jobs/?page=1&limit=20&order=1 HTTP/1.1" 200 -
+2024-12-12 17:24:53,029 - 127.0.0.1 - - [12/Dec/2024 17:24:53] "GET /jobs/?order=1 HTTP/1.1" 200 -
+2024-12-12 17:25:00,927 - 127.0.0.1 - - [12/Dec/2024 17:25:00] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 17:25:18,985 - 127.0.0.1 - - [12/Dec/2024 17:25:18] "GET /jobs/?page=2 HTTP/1.1" 200 -
+2024-12-12 17:25:26,684 - 127.0.0.1 - - [12/Dec/2024 17:25:26] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 17:25:56,466 - 127.0.0.1 - - [12/Dec/2024 17:25:56] "GET /jobs/?page=2 HTTP/1.1" 200 -
+2024-12-12 17:26:22,649 - 127.0.0.1 - - [12/Dec/2024 17:26:22] "GET /jobs/?page=1 HTTP/1.1" 200 -
+2024-12-12 17:26:59,214 - 127.0.0.1 - - [12/Dec/2024 17:26:59] "GET /jobs/ HTTP/1.1" 200 -
+2024-12-12 17:41:43,049 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://10.55.43.78:80
+2024-12-12 17:41:43,049 - [33mPress CTRL+C to quit[0m
+2024-12-12 17:41:43,050 -  * Restarting with stat
+2024-12-12 17:41:43,406 -  * Debugger is active!
+2024-12-12 17:41:43,414 -  * Debugger PIN: 527-388-488
+2024-12-12 17:41:45,738 - 127.0.0.1 - - [12/Dec/2024 17:41:45] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 17:41:45,753 - 127.0.0.1 - - [12/Dec/2024 17:41:45] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 17:41:45,755 - 127.0.0.1 - - [12/Dec/2024 17:41:45] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 17:41:45,756 - 127.0.0.1 - - [12/Dec/2024 17:41:45] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 17:41:45,756 - 127.0.0.1 - - [12/Dec/2024 17:41:45] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 17:41:45,797 - 127.0.0.1 - - [12/Dec/2024 17:41:45] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 17:41:45,798 - 127.0.0.1 - - [12/Dec/2024 17:41:45] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 17:41:46,495 - 127.0.0.1 - - [12/Dec/2024 17:41:46] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 17:41:46,506 - 127.0.0.1 - - [12/Dec/2024 17:41:46] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 17:41:46,507 - 127.0.0.1 - - [12/Dec/2024 17:41:46] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 17:41:46,508 - 127.0.0.1 - - [12/Dec/2024 17:41:46] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 17:41:46,509 - 127.0.0.1 - - [12/Dec/2024 17:41:46] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 17:41:46,534 - 127.0.0.1 - - [12/Dec/2024 17:41:46] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 17:41:46,536 - 127.0.0.1 - - [12/Dec/2024 17:41:46] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-12 17:41:53,677 - 127.0.0.1 - - [12/Dec/2024 17:41:53] "GET /jobs/?page=1&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-12 17:41:55,390 - 127.0.0.1 - - [12/Dec/2024 17:41:55] "GET /jobs/?page=1&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-12 17:41:59,904 - 127.0.0.1 - - [12/Dec/2024 17:41:59] "GET /jobs/?page=2&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-12 17:42:06,292 - 127.0.0.1 - - [12/Dec/2024 17:42:06] "[32mGET /jobs?page=3&limit=20&order=-1 HTTP/1.1[0m" 308 -
+2024-12-12 17:42:06,300 - 127.0.0.1 - - [12/Dec/2024 17:42:06] "GET /jobs/?page=3&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-12 17:43:15,663 - 127.0.0.1 - - [12/Dec/2024 17:43:15] "GET /jobs/search?query=개발 HTTP/1.1" 200 -
+2024-12-12 17:44:49,758 - 127.0.0.1 - - [12/Dec/2024 17:44:49] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-12 17:44:49,777 - 127.0.0.1 - - [12/Dec/2024 17:44:49] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-12 17:44:49,778 - 127.0.0.1 - - [12/Dec/2024 17:44:49] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-12 17:44:49,779 - 127.0.0.1 - - [12/Dec/2024 17:44:49] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-12 17:44:49,779 - 127.0.0.1 - - [12/Dec/2024 17:44:49] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-12 17:44:49,813 - 127.0.0.1 - - [12/Dec/2024 17:44:49] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-12 17:44:49,814 - 127.0.0.1 - - [12/Dec/2024 17:44:49] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -

@@ -579,42 +579,45 @@ paths:
   /jobs:
     get:
       summary: "채용 공고 목록 조회"
-      description: "필터, 정렬 및 페이지네이션을 통해 채용 공고를 조회합니다."
+      description: "채용 공고 목록을 조회합니다. 필터링, 페이징, 정렬 기능을 제공합니다."
       produces:
         - application/json
       parameters:
         - name: page
           in: query
           type: integer
-          description: "현재 페이지 번호 (기본값: 1)"
+          description: "조회할 페이지 번호 (기본값: 1)"
+          default: 1
         - name: limit
           in: query
           type: integer
           description: "페이지당 항목 수 (기본값: 20)"
+          default: 20
         - name: sort_by
           in: query
           type: string
-          description: "정렬 기준 (예: created_at)"
+          description: "정렬 기준 (기본값: '마감일')"
         - name: order
           in: query
           type: integer
           description: "정렬 순서 (1: 오름차순, -1: 내림차순)"
-        - name: location
+          default: -1
+        - name: 지역
           in: query
           type: string
-          description: "필터링할 지역 (예: Seoul)"
+          description: "필터링할 지역"
         - name: 경력
           in: query
           type: string
-          description: "필터링할 경력 (예: 신입)"
-        - name: salary
-          in: query
-          type: integer
-          description: "최소 연봉 기준 (예: 3000)"
-        - name: stack
+          description: "필터링할 경력"
+        - name: 급여
           in: query
           type: string
-          description: "필터링할 기술 스택 (쉼표로 구분, 예: Python,React)"
+          description: "급여 이상으로 필터링"
+        - name: 직무분야
+          in: query
+          type: string
+          description: "필터링할 직무 분야 (쉼표로 구분)"
       responses:
         200:
           description: "채용 공고 목록 조회 성공"
@@ -628,6 +631,23 @@ paths:
                 type: array
                 items:
                   type: object
+                  properties:
+                    # 각 채용 공고 항목 예시
+                    job_id:
+                      type: string
+                      example: "60c72b2f9f1b2c001f8e4a2c"
+                    제목:
+                      type: string
+                      example: "웹 개발자"
+                    회사명:
+                      type: string
+                      example: "ABC Corp"
+                    지역:
+                      type: string
+                      example: "서울"
+                    직무분야:
+                      type: string
+                      example: "백엔드, 웹개발"
               pagination:
                 type: object
                 properties:
@@ -636,15 +656,15 @@ paths:
                     example: 1
                   totalPages:
                     type: integer
-                    example: 10
+                    example: 52
                   totalItems:
                     type: integer
-                    example: 100
+                    example: 1040
                   itemsPerPage:
                     type: integer
                     example: 20
         400:
-          description: "요청 오류"
+          description: "잘못된 요청 파라미터"
           schema:
             type: object
             properties:
@@ -653,21 +673,22 @@ paths:
                 example: "error"
               message:
                 type: string
-                example: "잘못된 요청"
+                example: "잘못된 요청 파라미터"
               code:
                 type: string
                 example: "INVALID_REQUEST"
+
   /jobs/{job_id}:
     get:
       summary: "채용 공고 상세 조회"
-      description: "특정 채용 공고의 세부 정보를 조회합니다."
+      description: "특정 채용 공고의 상세 정보를 조회하고, 해당 공고에 추천된 채용 공고를 함께 제공합니다."
       produces:
         - application/json
       parameters:
         - name: job_id
           in: path
-          required: true
           type: string
+          required: true
           description: "조회할 채용 공고 ID"
       responses:
         200:
@@ -680,10 +701,12 @@ paths:
                 example: "success"
               data:
                 type: object
+                description: "채용 공고 상세 정보"
               recommended:
                 type: array
                 items:
                   type: object
+                description: "추천 채용 공고 목록"
         404:
           description: "채용 공고를 찾을 수 없음"
           schema:
@@ -698,18 +721,19 @@ paths:
               code:
                 type: string
                 example: "JOB_NOT_FOUND"
+
   /jobs/search:
     get:
       summary: "채용 공고 검색"
-      description: "검색어를 기반으로 채용 공고를 검색합니다."
+      description: "검색어를 사용해 채용 공고를 검색합니다."
       produces:
         - application/json
       parameters:
         - name: query
           in: query
           type: string
-          description: "검색어"
           required: true
+          description: "검색어"
       responses:
         200:
           description: "채용 공고 검색 성공"
@@ -724,7 +748,7 @@ paths:
                 items:
                   type: object
         400:
-          description: "검색어 없음"
+          description: "검색어가 제공되지 않음"
           schema:
             type: object
             properties:

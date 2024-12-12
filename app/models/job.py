@@ -7,10 +7,23 @@ class Job:
     collection = MongoClient(MONGO_URI)['job_crawler']['saramin_jobs']
 
     @classmethod
-    def find_all(cls, filters=None, sort_by="created_at", order=-1, skip=0, limit=20):
+    def find_all(cls, filters=None, sort_by="마감일", order=-1, skip=0, limit=20):
         filters = filters or {}
         sort_order = DESCENDING if order == -1 else ASCENDING
-        jobs = list(cls.collection.find(filters).sort(sort_by, sort_order).skip(skip).limit(limit))
+
+        # 급여 필터가 숫자인지 확인 후 처리
+        if '급여' in filters:
+            try:
+                filters['급여'] = {"$gte": int(filters['급여'])}
+            except ValueError:
+                filters.pop('급여')  # 잘못된 급여 필터는 제거
+
+        jobs = list(
+            cls.collection.find(filters)
+            .sort(sort_by, sort_order)
+            .skip(skip)
+            .limit(limit)
+        )
         return cls.serialize_jobs(jobs)
 
     @classmethod
@@ -29,12 +42,14 @@ class Job:
         current_job = cls.find_by_id(job_id)
         if not current_job:
             return []
+
         filters = {
             "$or": [
-                {"company": current_job.get("company")},
-                {"stack": {"$in": current_job.get("stack", [])}}
+                {"회사명": current_job.get("회사명")},
+                {"직무분야": {"$in": current_job.get("직무분야", [])}}  # 직무분야가 리스트일 때 처리
             ]
         }
+
         jobs = list(cls.collection.find(filters).limit(5))
         return cls.serialize_jobs(jobs)
 
@@ -47,13 +62,15 @@ class Job:
     def search(cls, query):
         if not query:
             return []
+
         search_filter = {
             "$or": [
-                {"title": {"$regex": query, "$options": "i"}},
-                {"company": {"$regex": query, "$options": "i"}},
-                {"stack": {"$regex": query, "$options": "i"}},
+                {"제목": {"$regex": query, "$options": "i"}},
+                {"회사명": {"$regex": query, "$options": "i"}},
+                {"직무분야": {"$regex": query, "$options": "i"}}
             ]
         }
+
         jobs = list(cls.collection.find(search_filter))
         return cls.serialize_jobs(jobs)
 
