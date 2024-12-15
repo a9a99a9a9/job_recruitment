@@ -3418,3 +3418,68 @@
 2024-12-15 12:42:33,939 - 127.0.0.1 - - [15/Dec/2024 12:42:33] "GET /apispec_1.json HTTP/1.1" 200 -
 2024-12-15 12:42:40,009 - 127.0.0.1 - - [15/Dec/2024 12:42:40] "GET /health HTTP/1.1" 200 -
 2024-12-15 12:42:42,498 - 127.0.0.1 - - [15/Dec/2024 12:42:42] "GET /health HTTP/1.1" 200 -
+2024-12-15 13:10:47,419 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.103:80
+2024-12-15 13:10:47,419 - [33mPress CTRL+C to quit[0m
+2024-12-15 13:10:47,420 -  * Restarting with stat
+2024-12-15 13:10:47,787 -  * Debugger is active!
+2024-12-15 13:10:47,796 -  * Debugger PIN: 527-388-488
+2024-12-15 13:11:28,031 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.103:80
+2024-12-15 13:11:28,031 - [33mPress CTRL+C to quit[0m
+2024-12-15 13:11:28,032 -  * Restarting with stat
+2024-12-15 13:11:28,387 -  * Debugger is active!
+2024-12-15 13:11:28,394 -  * Debugger PIN: 527-388-488
+2024-12-15 13:11:35,856 - 127.0.0.1 - - [15/Dec/2024 13:11:35] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-15 13:11:35,877 - 127.0.0.1 - - [15/Dec/2024 13:11:35] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-15 13:11:35,878 - 127.0.0.1 - - [15/Dec/2024 13:11:35] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-15 13:11:35,879 - 127.0.0.1 - - [15/Dec/2024 13:11:35] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-15 13:11:35,881 - 127.0.0.1 - - [15/Dec/2024 13:11:35] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-15 13:11:35,938 - 127.0.0.1 - - [15/Dec/2024 13:11:35] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-15 13:11:36,865 - 127.0.0.1 - - [15/Dec/2024 13:11:36] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-15 13:11:36,878 - 127.0.0.1 - - [15/Dec/2024 13:11:36] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-15 13:11:36,879 - 127.0.0.1 - - [15/Dec/2024 13:11:36] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-15 13:11:36,880 - 127.0.0.1 - - [15/Dec/2024 13:11:36] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-15 13:11:36,881 - 127.0.0.1 - - [15/Dec/2024 13:11:36] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-15 13:11:36,918 - 127.0.0.1 - - [15/Dec/2024 13:11:36] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-15 13:11:36,920 - 127.0.0.1 - - [15/Dec/2024 13:11:36] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-15 13:11:42,920 - 127.0.0.1 - - [15/Dec/2024 13:11:42] "GET /health HTTP/1.1" 200 -
+2024-12-15 13:11:43,532 - 127.0.0.1 - - [15/Dec/2024 13:11:43] "GET /health HTTP/1.1" 200 -
+2024-12-15 13:11:44,357 - 127.0.0.1 - - [15/Dec/2024 13:11:44] "GET /health HTTP/1.1" 200 -
+2024-12-15 13:11:44,840 - 127.0.0.1 - - [15/Dec/2024 13:11:44] "GET /health HTTP/1.1" 200 -
+2024-12-15 13:11:45,737 - 127.0.0.1 - - [15/Dec/2024 13:11:45] "GET /health HTTP/1.1" 200 -
+2024-12-15 13:11:46,796 - 127.0.0.1 - - [15/Dec/2024 13:11:46] "GET /health HTTP/1.1" 200 -
+2024-12-15 14:15:21,125 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-15 14:15:21,140 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,141 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,143 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,143 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,188 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-15 14:15:21,190 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,885 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-15 14:15:21,896 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,898 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,898 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,898 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-15 14:15:21,924 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-15 14:15:21,925 - 127.0.0.1 - - [15/Dec/2024 14:15:21] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-15 14:15:24,206 - 127.0.0.1 - - [15/Dec/2024 14:15:24] "GET /health HTTP/1.1" 200 -
+2024-12-15 14:15:25,220 - 127.0.0.1 - - [15/Dec/2024 14:15:25] "GET /health HTTP/1.1" 200 -
+2024-12-15 14:15:34,147 - 127.0.0.1 - - [15/Dec/2024 14:15:34] "GET /jobs/?page=1&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-15 14:15:49,821 - 127.0.0.1 - - [15/Dec/2024 14:15:49] "GET /jobs/?page=2&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-15 14:17:11,399 - 127.0.0.1 - - [15/Dec/2024 14:17:11] "GET /apidocs/ HTTP/1.1" 200 -
+2024-12-15 14:17:11,418 - 127.0.0.1 - - [15/Dec/2024 14:17:11] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-12-15 14:17:11,420 - 127.0.0.1 - - [15/Dec/2024 14:17:11] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-12-15 14:17:11,420 - 127.0.0.1 - - [15/Dec/2024 14:17:11] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-12-15 14:17:11,421 - 127.0.0.1 - - [15/Dec/2024 14:17:11] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2024-12-15 14:17:11,453 - 127.0.0.1 - - [15/Dec/2024 14:17:11] "GET /apispec_1.json HTTP/1.1" 200 -
+2024-12-15 14:17:11,454 - 127.0.0.1 - - [15/Dec/2024 14:17:11] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-12-15 14:23:17,530 - 127.0.0.1 - - [15/Dec/2024 14:23:17] "[32mGET /jobs?page=1&limit=20&order=-1 HTTP/1.1[0m" 308 -
+2024-12-15 14:23:17,540 - 127.0.0.1 - - [15/Dec/2024 14:23:17] "GET /jobs/?page=1&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-15 14:23:17,575 - 127.0.0.1 - - [15/Dec/2024 14:23:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-15 14:33:58,215 - 127.0.0.1 - - [15/Dec/2024 14:33:58] "GET /jobs/?page=1&limit=20&order=-1 HTTP/1.1" 200 -
+2024-12-15 14:34:16,390 - 127.0.0.1 - - [15/Dec/2024 14:34:16] "GET /jobs/?page=2&limit=20&order=-1 HTTP/1.1" 200 -
